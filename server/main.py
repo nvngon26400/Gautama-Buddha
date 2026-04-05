@@ -25,10 +25,21 @@ from pydantic import BaseModel, Field, field_validator
 KNOWLEDGE_PATH = Path(__file__).resolve().parent / "knowledge" / "figures.json"
 FIGURES_EN_PATH = Path(__file__).resolve().parent / "knowledge" / "figures_en.json"
 
+
+def _cors_allow_origins() -> list[str]:
+    """Local dev + optional CORS_EXTRA_ORIGINS (domain tùy chỉnh, v.v.)."""
+    origins = ["http://127.0.0.1:5173", "http://localhost:5173"]
+    extra = os.environ.get("CORS_EXTRA_ORIGINS", "")
+    if extra.strip():
+        origins.extend(x.strip() for x in extra.split(",") if x.strip())
+    return origins
+
+
 app = FastAPI(title="Buddhist Iconography API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    allow_origins=_cors_allow_origins(),
+    allow_origin_regex=r"https://([\w-]+\.)?vercel\.app$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
