@@ -1,0 +1,566 @@
+{
+  "jiSi": {
+    "zh": "祭祀",
+    "en": "Sacrifice"
+  },
+  "qiFu": {
+    "zh": "祈福",
+    "en": "Pray"
+  },
+  "qiuSi": {
+    "zh": "求嗣",
+    "en": "Seek heirs"
+  },
+  "kaiGuang": {
+    "zh": "开光",
+    "en": "Consecretion"
+  },
+  "suHui": {
+    "zh": "塑绘",
+    "en": "Paint sculptural"
+  },
+  "qiJiao": {
+    "zh": "齐醮",
+    "en": "Build altar"
+  },
+  "zhaiJiao": {
+    "zh": "斋醮",
+    "en": "Taoist rites"
+  },
+  "muYu": {
+    "zh": "沐浴",
+    "en": "Bathing"
+  },
+  "chouShen": {
+    "zh": "酬神",
+    "en": "Reward gods"
+  },
+  "zaoMiao": {
+    "zh": "造庙",
+    "en": "Build temple"
+  },
+  "siZhao": {
+    "zh": "祀灶",
+    "en": "Offer kitchen god"
+  },
+  "fenXiang": {
+    "zh": "焚香",
+    "en": "Burn incense"
+  },
+  "xieTu": {
+    "zh": "谢土",
+    "en": "Earth gratitude"
+  },
+  "chuHuo": {
+    "zh": "出火",
+    "en": "Expel the flame"
+  },
+  "diaoKe": {
+    "zh": "雕刻",
+    "en": "Carving"
+  },
+  "jiaQu": {
+    "zh": "嫁娶",
+    "en": "Marriage"
+  },
+  "DingHun": {
+    "zh": "订婚",
+    "en": "Engagement"
+  },
+  "naCai": {
+    "zh": "纳采",
+    "en": "Proposing"
+  },
+  "wenMing": {
+    "zh": "问名",
+    "en": "Ask name"
+  },
+  "naXu": {
+    "zh": "纳婿",
+    "en": "Uxorilocal marriage"
+  },
+  "guiNing": {
+    "zh": "归宁",
+    "en": "Visit parents"
+  },
+  "anChuang": {
+    "zh": "安床",
+    "en": "Bed placing"
+  },
+  "heZhang": {
+    "zh": "合帐",
+    "en": "Make up accounts"
+  },
+  "guanJi": {
+    "zh": "冠笄",
+    "en": "Crowning adulthood"
+  },
+  "dingMeng": {
+    "zh": "订盟",
+    "en": "Make alliance"
+  },
+  "jinRenKou": {
+    "zh": "进人口",
+    "en": "Adopt"
+  },
+  "caiYi": {
+    "zh": "裁衣",
+    "en": "Dressmaking"
+  },
+  "wanMian": {
+    "zh": "挽面",
+    "en": "Cosmeticsurgery"
+  },
+  "kaiRong": {
+    "zh": "开容",
+    "en": "Open face"
+  },
+  "xiuFen": {
+    "zh": "修坟",
+    "en": "Grave repair"
+  },
+  "qiZuan": {
+    "zh": "启钻",
+    "en": "Open coffin"
+  },
+  "poTu": {
+    "zh": "破土",
+    "en": "Break earth"
+  },
+  "anZang": {
+    "zh": "安葬",
+    "en": "Burial"
+  },
+  "liBei": {
+    "zh": "立碑",
+    "en": "Tombstone erecting"
+  },
+  "chengFu": {
+    "zh": "成服",
+    "en": "Formation of clothes"
+  },
+  "chuFu": {
+    "zh": "除服",
+    "en": "Mourning clothes removal"
+  },
+  "kaiShengFen": {
+    "zh": "开生坟",
+    "en": "Open grave"
+  },
+  "heShouMu": {
+    "zh": "合寿木",
+    "en": "Make coffin"
+  },
+  "ruLian": {
+    "zh": "入殓",
+    "en": "Body placing"
+  },
+  "yiJiu": {
+    "zh": "移柩",
+    "en": "Move coffin"
+  },
+  "puDu": {
+    "zh": "普渡",
+    "en": "Save soul"
+  },
+  "ruZhai": {
+    "zh": "入宅",
+    "en": "Enter house"
+  },
+  "anXiang": {
+    "zh": "安香",
+    "en": "Incenst placement"
+  },
+  "anMen": {
+    "zh": "安门",
+    "en": "Door placing"
+  },
+  "xiuZao": {
+    "zh": "修造",
+    "en": "Repair"
+  },
+  "qiJi": {
+    "zh": "起基",
+    "en": "Digging"
+  },
+  "dongTu": {
+    "zh": "动土",
+    "en": "Break ground"
+  },
+  "shangLiang": {
+    "zh": "上梁",
+    "en": "Beam placing"
+  },
+  "shuZhu": {
+    "zh": "竖柱",
+    "en": "Erecting pillars"
+  },
+  "kaiJing": {
+    "zh": "开井开池",
+    "en": "Open pond and well"
+  },
+  "zuoBei": {
+    "zh": "作陂放水",
+    "en": "Make pond and fill water"
+  },
+  "chaiXie": {
+    "zh": "拆卸",
+    "en": "Smash house"
+  },
+  "poWu": {
+    "zh": "破屋",
+    "en": "Break house"
+  },
+  "huaiYuan": {
+    "zh": "坏垣",
+    "en": "Demolish"
+  },
+  "buYuan": {
+    "zh": "补垣",
+    "en": "Mending"
+  },
+  "faMuZuoLiang": {
+    "zh": "伐木做梁",
+    "en": "Make beams"
+  },
+  "zuoZhao": {
+    "zh": "作灶",
+    "en": "Make stove"
+  },
+  "jieChu": {
+    "zh": "解除",
+    "en": "Removal"
+  },
+  "kaiZhuYan": {
+    "zh": "开柱眼",
+    "en": "Build beam"
+  },
+  "chuanPing": {
+    "zh": "穿屏扇架",
+    "en": "Build door"
+  },
+  "gaiWuHeJi": {
+    "zh": "盖屋合脊",
+    "en": "Cover house"
+  },
+  "kaiCe": {
+    "zh": "开厕",
+    "en": "Open toilet"
+  },
+  "zaoCang": {
+    "zh": "造仓",
+    "en": "Build depot"
+  },
+  "saiXue": {
+    "zh": "塞穴",
+    "en": "Block nest"
+  },
+  "pingZhi": {
+    "zh": "平治道涂",
+    "en": "Repair roads"
+  },
+  "zaoQiao": {
+    "zh": "造桥",
+    "en": "Build bridge"
+  },
+  "zuoCe": {
+    "zh": "作厕",
+    "en": "Build toilet"
+  },
+  "zhuDi": {
+    "zh": "筑堤",
+    "en": "Fill"
+  },
+  "kaiChi": {
+    "zh": "开池",
+    "en": "Open pond"
+  },
+  "faMu": {
+    "zh": "伐木",
+    "en": "Lumbering"
+  },
+  "kaiQu": {
+    "zh": "开渠",
+    "en": "Canalization"
+  },
+  "jueJing": {
+    "zh": "掘井",
+    "en": "Dig well"
+  },
+  "saoShe": {
+    "zh": "扫舍",
+    "en": "Sweep house"
+  },
+  "fangShui": {
+    "zh": "放水",
+    "en": "Drainage"
+  },
+  "zaoWu": {
+    "zh": "造屋",
+    "en": "Build house"
+  },
+  "heJi": {
+    "zh": "合脊",
+    "en": "Close ridge"
+  },
+  "zaoChuChou": {
+    "zh": "造畜稠",
+    "en": "Livestock thickening"
+  },
+  "xiuMen": {
+    "zh": "修门",
+    "en": "Repair door"
+  },
+  "dingSang": {
+    "zh": "定磉",
+    "en": "Fix stone"
+  },
+  "zuoLiang": {
+    "zh": "作梁",
+    "en": "Beam construction"
+  },
+  "xiuShi": {
+    "zh": "修饰垣墙",
+    "en": "Decorate wall"
+  },
+  "jiaMa": {
+    "zh": "架马",
+    "en": "Erect horse"
+  },
+  "kaiShi": {
+    "zh": "开市",
+    "en": "Opening"
+  },
+  "guaBian": {
+    "zh": "挂匾",
+    "en": "Hang plaque"
+  },
+  "naChai": {
+    "zh": "纳财",
+    "en": "Accept wealth"
+  },
+  "qiuCai": {
+    "zh": "求财",
+    "en": "Seek wealth"
+  },
+  "kaiCang": {
+    "zh": "开仓",
+    "en": "Open depot"
+  },
+  "maiChe": {
+    "zh": "买车",
+    "en": "Buy car"
+  },
+  "zhiChan": {
+    "zh": "置产",
+    "en": "Buy property"
+  },
+  "guYong": {
+    "zh": "雇佣",
+    "en": "Hire"
+  },
+  "chuHuoCai": {
+    "zh": "出货财",
+    "en": "Delivery"
+  },
+  "anJiXie": {
+    "zh": "安机械",
+    "en": "Build machine"
+  },
+  "zaoCheQi": {
+    "zh": "造车器",
+    "en": "Build car"
+  },
+  "jingLuo": {
+    "zh": "经络",
+    "en": "Build loom"
+  },
+  "yunNiang": {
+    "zh": "酝酿",
+    "en": "Brew"
+  },
+  "zuoRan": {
+    "zh": "作染",
+    "en": "Dye"
+  },
+  "guZhu": {
+    "zh": "鼓铸",
+    "en": "Cast"
+  },
+  "zaoChuan": {
+    "zh": "造船",
+    "en": "Build boat"
+  },
+  "geMi": {
+    "zh": "割蜜",
+    "en": "Harvest honey"
+  },
+  "zaiZhong": {
+    "zh": "栽种",
+    "en": "Farming"
+  },
+  "quYu": {
+    "zh": "取渔",
+    "en": "Fishing"
+  },
+  "jieWang": {
+    "zh": "结网",
+    "en": "Netting"
+  },
+  "muYang": {
+    "zh": "牧养",
+    "en": "Graze"
+  },
+  "anDuiWei": {
+    "zh": "安碓磑",
+    "en": "Build rub"
+  },
+  "xiYi": {
+    "zh": "习艺",
+    "en": "Learn"
+  },
+  "ruXue": {
+    "zh": "入学",
+    "en": "Enter school"
+  },
+  "liFa": {
+    "zh": "理发",
+    "en": "Haircut"
+  },
+  "tanBing": {
+    "zh": "探病",
+    "en": "Visiting"
+  },
+  "jianGui": {
+    "zh": "见贵",
+    "en": "Meet noble"
+  },
+  "chengChuan": {
+    "zh": "乘船",
+    "en": "Ride boat"
+  },
+  "duShui": {
+    "zh": "渡水",
+    "en": "Cross water"
+  },
+  "zhenJiu": {
+    "zh": "针灸",
+    "en": "Acupuncture"
+  },
+  "chuXing": {
+    "zh": "出行",
+    "en": "Travel"
+  },
+  "yiXi": {
+    "zh": "移徙",
+    "en": "Move"
+  },
+  "fenJu": {
+    "zh": "分居",
+    "en": "Live apart"
+  },
+  "TiTou": {
+    "zh": "剃头",
+    "en": "Shave"
+  },
+  "zhengShou": {
+    "zh": "整手足甲",
+    "en": "Manicure"
+  },
+  "naChu": {
+    "zh": "纳畜",
+    "en": "Feed livestock"
+  },
+  "buZhuo": {
+    "zh": "捕捉",
+    "en": "Catch"
+  },
+  "tianLie": {
+    "zh": "畋猎",
+    "en": "Hunt"
+  },
+  "jiaoNiuMa": {
+    "zh": "教牛马",
+    "en": "Train horse"
+  },
+  "huiQinYou": {
+    "zh": "会亲友",
+    "en": "Meet friends"
+  },
+  "fuRen": {
+    "zh": "赴任",
+    "en": "Go post"
+  },
+  "qiuYi": {
+    "zh": "求医",
+    "en": "See doctor"
+  },
+  "zhiBing": {
+    "zh": "治病",
+    "en": "Treat"
+  },
+  "ciSong": {
+    "zh": "词讼",
+    "en": "Litigation"
+  },
+  "qiJiDongTu": {
+    "zh": "起基动土",
+    "en": "Lay foundation"
+  },
+  "poWuHuaiYuan": {
+    "zh": "破屋坏垣",
+    "en": "Demolish"
+  },
+  "gaiWu": {
+    "zh": "盖屋",
+    "en": "Build house"
+  },
+  "zaoCangKu": {
+    "zh": "造仓库",
+    "en": "Build depot"
+  },
+  "liQuanJiaoYi": {
+    "zh": "立券交易",
+    "en": "Covenant trade"
+  },
+  "jiaoYi": {
+    "zh": "交易",
+    "en": "Trade"
+  },
+  "liQuan": {
+    "zh": "立券",
+    "en": "Covenant"
+  },
+  "anJi": {
+    "zh": "安机",
+    "en": "Install machine"
+  },
+  "huiYou": {
+    "zh": "会友",
+    "en": "Meet friends"
+  },
+  "qiuYiLiaoBing": {
+    "zh": "求医疗病",
+    "en": "Seek treatment"
+  },
+  "zhuShi": {
+    "zh": "诸事不宜",
+    "en": "Everything Sucks"
+  },
+  "yuShi": {
+    "zh": "馀事勿取",
+    "en": "Do nothing else"
+  },
+  "xingSang": {
+    "zh": "行丧",
+    "en": "Funeral"
+  },
+  "duanYi": {
+    "zh": "断蚁",
+    "en": "Block ant hole"
+  },
+  "guiXiu": {
+    "zh": "归岫",
+    "en": "Place beam"
+  }
+}

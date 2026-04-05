@@ -2,117 +2,1319 @@
   {
     "id": "shakyamuni",
     "name_vi": "Phật Thích Ca Mâu Ni",
-    "names_other": ["Gautama Buddha", "Tất-đạt-đa Cồ-đàm"],
-    "wikipedia_titles": { "vi": "Gautama Buddha", "en": "Gautama Buddha" },
-    "summary_vi": "Bậc Giác ngộ lịch sử của Phật giáo, biểu tượng cho trí tuệ và từ bi đã dứt khổ đau.",
-    "mudras_common_vi": [
-      { "name": "Ấn Chuyển Pháp Luân (Dharmachakra mudra)", "meaning": "Chỉ sự chuyển vận giáo pháp, lời mời quán chiếu Trung đạo." },
-      { "name": "Ấn Thiền Định (Dhyana mudra)", "meaning": "Tĩnh lặng nội tâm, an trú trong chánh niệm." },
-      { "name": "Ấn Chạm Đất (Bhumisparsha mudra)", "meaning": "Nhân chứng của sự tỉnh thức, kiên định trước chướng ngại." }
+    "names_other": [
+      "Gautama Buddha",
+      "Tất-đạt-đa Cồ-đàm",
+      "Śākyamuni"
     ],
-    "implements_vi": [],
-    "mindfulness_hint_vi": "Hình ảnh đức Phật thường gợi nhớ: dừng lại, nhìn thẳng vào kinh nghiệm hiện tại, và chọn hành động có chánh niệm thay vì phản ứng vô thức."
+    "wikipedia_titles": {
+      "vi": "Gautama Buddha",
+      "en": "Gautama Buddha"
+    },
+    "summary_vi": "Đức Phật lịch sử của Phật giáo Nguyên thủy và nền tảng cho nhiều truyền thống Đại thừa; biểu tượng cho giác ngộ qua trí tuệ và từ bi, chấm dứt luân hồi khổ đau. Tượng thường là nam, tóc bọc uẩn, y cà sa.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn Chạm Đất (Bhumisparsha mudra)",
+        "meaning": "Gọi đất làm chứng — kiên định, tỉnh thức trước ma chướng; nhắc về nhân chứng nội tâm, không chạy trốn khó khăn."
+      },
+      {
+        "name": "Ấn Chuyển Pháp Luân (Dharmachakra mudra)",
+        "meaning": "Chuyển bánh xe pháp — mời gọi quán chiếu Trung đạo, chia sẻ điều đã hiểu với thái độ cởi mở."
+      },
+      {
+        "name": "Ấn Thiền Định (Dhyana mudra)",
+        "meaning": "An trú tĩnh lặng — chân tay đặt ổn định, gợi định tĩnh trong đời sống bận rộn."
+      },
+      {
+        "name": "Ấn Ban cho / thí vô úy (Varada / Abhaya)",
+        "meaning": "Mở lòng hoặc xua tan sợ hãi — tùy tượng cụ thể; thường gặp ở một số dòng tượng Đông Nam Á / Trung Hoa."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Bát khất thực (tùy tượng)",
+        "meaning": "Sự đủ đầy giản dị, nhận nuôi dưỡng từ đời sống chân thật — không cầu kỳ."
+      }
+    ],
+    "mindfulness_hint_vi": "Hình ảnh Phật Thích Ca thường gợi: dừng lại một nhịp, nhìn rõ cảm giện đang có, rồi chọn đáp ứng có chủ tâm thay vì phản xạ theo thói quen.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Gautama_Buddha_first_sermon_in_Sarnath.jpg/960px-Gautama_Buddha_first_sermon_in_Sarnath.jpg",
+      "commons_file": "File:Gautama Buddha first sermon in Sarnath.jpg",
+      "alt_vi": "Tượng Phật Thích Ca thuyết pháp lần đầu (Sarnath, Ấn Độ).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Gautama_Buddha_first_sermon_in_Sarnath.jpg/960px-Gautama_Buddha_first_sermon_in_Sarnath.jpg",
+        "commons_file": "File:Gautama Buddha first sermon in Sarnath.jpg",
+        "alt_vi": "Tượng Phật Thích Ca thuyết pháp lần đầu (Sarnath, Ấn Độ).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Large_Gautama_Buddha_statue_in_Buddha_Park_of_Ravangla%2C_Sikkim.jpg/960px-Large_Gautama_Buddha_statue_in_Buddha_Park_of_Ravangla%2C_Sikkim.jpg",
+        "alt_vi": "Phật Thích Ca Mâu Ni — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Large Gautama Buddha statue in Buddha Park of Ravangla, Sikkim.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Bhuvan_shanti_100_feet_lion_bed_statue_of_Gautama_Buddha.jpg/960px-Bhuvan_shanti_100_feet_lion_bed_statue_of_Gautama_Buddha.jpg",
+        "alt_vi": "Phật Thích Ca Mâu Ni — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Bhuvan shanti 100 feet lion bed statue of Gautama Buddha.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Buddha_statue_at_Buddha_Park_of_Ravangla%2C_Sikkim%2C_India_%281%29.jpg/960px-Buddha_statue_at_Buddha_Park_of_Ravangla%2C_Sikkim%2C_India_%281%29.jpg",
+        "alt_vi": "Phật Thích Ca Mâu Ni — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Buddha statue at Buddha Park of Ravangla, Sikkim, India (1).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gautama_Buddha_3.jpg/960px-Gautama_Buddha_3.jpg",
+        "alt_vi": "Phật Thích Ca Mâu Ni — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Gautama Buddha 3.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "amitabha",
     "name_vi": "Phật A Di Đà",
-    "names_other": ["Amitābha", "Amitāyus"],
-    "wikipedia_titles": { "vi": "A Di Đà", "en": "Amitābha" },
-    "summary_vi": "Đức Phật của ánh sáng và thọ mạng vô lượng, trọng tâm tịnh độ tại một số truyền thống Đại thừa.",
-    "mudras_common_vi": [
-      { "name": "Ấn Thiền Định (Dhyana mudra)", "meaning": "An trú, tiếp nhận trong tĩnh lặng." },
-      { "name": "Ấn Tiếp Dẫn (Varada / mở lòng ban cho)", "meaning": "Lòng mở, sẵn sàng nương tựa vào chánh pháp và lòng từ." }
+    "names_other": [
+      "Amitābha",
+      "Amitāyus",
+      "Vô Lượng Quang",
+      "Vô Lượng Thọ"
     ],
-    "implements_vi": [],
-    "mindfulness_hint_vi": "Biểu tượng ánh sáng vô lượng có thể được hiểu như nhắc nhở: mở rộng không gian tâm, buông bớt thu hẹp vào 'tôi nhỏ bé' đang lo sợ."
+    "wikipedia_titles": {
+      "vi": "A Di Đà",
+      "en": "Amitābha"
+    },
+    "summary_vi": "Đức Phật của ánh sáng và thọ mạng vô lượng, trung tâm của nhiều kinh điển Tịnh độ; biểu tượng cho lòng tin, nguyện hướng về giác ngộ và sự nương tựa chánh pháp. Thường tọa thiền, tương đồng tướng Phật giác ngộ nhưng gắn hệ Tây phương cực lạc trong truyền thống Tịnh độ.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn Thiền Định (Dhyana mudra)",
+        "meaning": "An trú, tiếp nhận trong tĩnh — mở không gian nội tâm để ‘quay về’ với điều lành."
+      },
+      {
+        "name": "Ấn Tiếp Dẫn (thường gặp ở tượng Tịnh độ)",
+        "meaning": "Bàn tay vươn mời — gợi lòng mở, không đóng cứng trước khổ đau của mình và người khác."
+      },
+      {
+        "name": "Ấn Chuyển Pháp Luân (một số dòng tượng)",
+        "meaning": "Nhấn mạnh pháp âm thanh danh hiệu / nguyện lực trong tu tập Tịnh độ."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Đài sen / tọa sen",
+        "meaning": "Thanh tịnh nơi bùn nhơ — khả năng giữ đạo đức và từ bi ngay trong hoàn cảnh đời thường."
+      }
+    ],
+    "mindfulness_hint_vi": "Ánh sáng vô lượng có thể hiểu như nhắc nhở: buông bớt thu hẹp vào ‘cái tôi’ đang lo sợ, mở rộng không gian tâm trước một người, một việc đang khó.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Interior_view_of_the_Buddhist_temple_Amidado_with_a_golden_statue_of_the_Buddha_seated_Kiyomizu-dera_Kyoto_Japan.jpg/960px-Interior_view_of_the_Buddhist_temple_Amidado_with_a_golden_statue_of_the_Buddha_seated_Kiyomizu-dera_Kyoto_Japan.jpg",
+      "commons_file": "File:Interior view of the Buddhist temple Amidado with a golden statue of the Buddha seated Kiyomizu-dera Kyoto Japan.jpg",
+      "alt_vi": "Tượng Phật A Di Đà trong điện Amida (Kiyomizu-dera, Kyoto).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Interior_view_of_the_Buddhist_temple_Amidado_with_a_golden_statue_of_the_Buddha_seated_Kiyomizu-dera_Kyoto_Japan.jpg/960px-Interior_view_of_the_Buddhist_temple_Amidado_with_a_golden_statue_of_the_Buddha_seated_Kiyomizu-dera_Kyoto_Japan.jpg",
+        "commons_file": "File:Interior view of the Buddhist temple Amidado with a golden statue of the Buddha seated Kiyomizu-dera Kyoto Japan.jpg",
+        "alt_vi": "Tượng Phật A Di Đà trong điện Amida (Kiyomizu-dera, Kyoto).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Detail._Bronze_statue_of_seated_Amida_Buddha%2C_from_Japan%2C_18th_to_19th_century_CE._National_Museum_of_Scotland%2C_Edinburgh.jpg/960px-Detail._Bronze_statue_of_seated_Amida_Buddha%2C_from_Japan%2C_18th_to_19th_century_CE._National_Museum_of_Scotland%2C_Edinburgh.jpg",
+        "alt_vi": "Phật A Di Đà — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Detail. Bronze statue of seated Amida Buddha, from Japan, 18th to 19th century CE. National Museum of Scotland, Edinburgh.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bronze_statue_of_seated_Amida_Buddha%2C_from_Japan%2C_18th_to_19th_century_CE._National_Museum_of_Scotland%2C_Edinburgh.jpg/960px-Bronze_statue_of_seated_Amida_Buddha%2C_from_Japan%2C_18th_to_19th_century_CE._National_Museum_of_Scotland%2C_Edinburgh.jpg",
+        "alt_vi": "Phật A Di Đà — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Bronze statue of seated Amida Buddha, from Japan, 18th to 19th century CE. National Museum of Scotland, Edinburgh.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Narutani_Amitabha_stone_carving.jpg/960px-Narutani_Amitabha_stone_carving.jpg",
+        "alt_vi": "Phật A Di Đà — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Narutani Amitabha stone carving.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Narutani_Amitabha_stone_carving_%28overall%29.jpg/960px-Narutani_Amitabha_stone_carving_%28overall%29.jpg",
+        "alt_vi": "Phật A Di Đà — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Narutani Amitabha stone carving (overall).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "avalokiteshvara",
     "name_vi": "Quán Thế Âm Bồ Tát",
-    "names_other": ["Avalokiteśvara", "Quan Âm", "Guanyin"],
-    "wikipedia_titles": { "vi": "Quan Âm", "en": "Avalokiteśvara" },
-    "summary_vi": "Bồ Tát của lòng từ bi lắng nghe tiếng khổ của chúng sinh, biểu tượng cho từ bi hành động.",
+    "names_other": [
+      "Avalokiteśvara",
+      "Quan Âm",
+      "Guanyin",
+      "Lokesvara"
+    ],
+    "wikipedia_titles": {
+      "vi": "Quan Âm",
+      "en": "Avalokiteśvara"
+    },
+    "summary_vi": "Bồ Tát của lòng từ bi lắng nghe tiếng khổ chúng sinh; trong điêu khắc thường là tượng nữ hiền từ, nhiều tay (thiên thủ), hoặc nam cầm bình / dương liễu. Biểu tượng cho từ bi hành động và lắng nghe sâu sắc.",
     "mudras_common_vi": [
-      { "name": "Ấn Cầm Bình / liên hoa", "meaning": "Tưới mát, thanh lọc và chữa lành bằng từ bi." },
-      { "name": "Ấn thiên thủ (trong hóa thân Thiên Thủ)", "meaning": "Nhiều phương tiện để đáp ứng khổ đau đa dạng." }
+      {
+        "name": "Ấn cầm bình / đưa bình",
+        "meaning": "Tưới mát cam lộ — gợi làm dịu khổ đau bằng lời nói và hành động ôn hòa."
+      },
+      {
+        "name": "Ấn cầm cành dương liễu",
+        "meaning": "Quét nhẹ bụi trần — buông cứng nhắc, mềm dẻo với bản thân và người khác."
+      },
+      {
+        "name": "Ấn trong hóa thân thiên thủ",
+        "meaning": "Nhiều tay — nhiều phương tiện để đáp ứng khổ đau đa dạng, không một khuôn mẫu."
+      },
+      {
+        "name": "Ấn từ bi / ấn cầm đài sen (tùy tượng)",
+        "meaning": "Giữ tâm thanh tịnh giữa sóng gió — sen nở trong bùn."
+      }
     ],
     "implements_vi": [
-      { "name": "Bình cam lồ", "meaning": "Nước cam lộ — gợi ý sự trong lành, an ủi, làm dịu nóng giận và bi quan." },
-      { "name": "Cành dương liễu", "meaning": "Nhẹ nhàng quét bụi trần — buông bớt cứng nhắc, mềm mỏng với bản thân và người khác." }
+      {
+        "name": "Bình cam lồ",
+        "meaning": "Nước cam lộ — gợi sự trong lành, an ủi; làm dịu cáu giận, bi quan bằng thực hành từ bi đối với chính mình."
+      },
+      {
+        "name": "Cành dương liễu",
+        "meaning": "Nhẹ nhàng quét ‘bụi’ phiền não — linh hoạt, không cố chấp."
+      },
+      {
+        "name": "Đài sen hoặc măng sen",
+        "meaning": "Sinh khởi từ bùn — khả năng phát triển điều thiện ngay trong khó khăn."
+      }
     ],
-    "mindfulness_hint_vi": "Quán Âm nhắc ta lắng nghe: trước hết là âm thanh và cảm xúc trong thân, rồi mới đến lời người khác — không vội phán xét."
+    "mindfulness_hint_vi": "Quán Âm nhắc lắng nghe theo lớp: trước hết là cảm giác thân (hơi thở, căng thẳng), rồi tiếng động bên ngoài, rồi lời người khác — trì hoãn phán xét.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bodhisattva_Guanyin-EO_1616-IMG_9206-gradient.jpg/960px-Bodhisattva_Guanyin-EO_1616-IMG_9206-gradient.jpg",
+      "commons_file": "File:Bodhisattva Guanyin-EO 1616-IMG 9206-gradient.jpg",
+      "alt_vi": "Tượng Quán Thế Âm (Quan Âm) Bồ Tát.",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bodhisattva_Guanyin-EO_1616-IMG_9206-gradient.jpg/960px-Bodhisattva_Guanyin-EO_1616-IMG_9206-gradient.jpg",
+        "commons_file": "File:Bodhisattva Guanyin-EO 1616-IMG 9206-gradient.jpg",
+        "alt_vi": "Tượng Quán Thế Âm (Quan Âm) Bồ Tát.",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Standing_Bodhisattva_Guanyin_%28Avalokiteshvara%29.jpg/960px-Standing_Bodhisattva_Guanyin_%28Avalokiteshvara%29.jpg",
+        "alt_vi": "Quán Thế Âm Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Standing Bodhisattva Guanyin (Avalokiteshvara).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tang_Gilt_Bronze_Guanyin_%2810433559576%29.jpg/960px-Tang_Gilt_Bronze_Guanyin_%2810433559576%29.jpg",
+        "alt_vi": "Quán Thế Âm Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Tang Gilt Bronze Guanyin (10433559576).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_bodhisattva_Avalokiteshvara_%28Guanyin%29.jpg/960px-The_bodhisattva_Avalokiteshvara_%28Guanyin%29.jpg",
+        "alt_vi": "Quán Thế Âm Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:The bodhisattva Avalokiteshvara (Guanyin).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seated_Bodhisattva_Avalokiteshvara_-_Guanyin_-_Joy_of_Museums_-_Asian_Art_Museum_-_San_Francisco.jpg/960px-Seated_Bodhisattva_Avalokiteshvara_-_Guanyin_-_Joy_of_Museums_-_Asian_Art_Museum_-_San_Francisco.jpg",
+        "alt_vi": "Quán Thế Âm Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Seated Bodhisattva Avalokiteshvara - Guanyin - Joy of Museums - Asian Art Museum - San Francisco.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "kshitigarbha",
     "name_vi": "Địa Tạng Bồ Tát",
-    "names_other": ["Kṣitigarbha", "Địa Tạng Vương"],
-    "wikipedia_titles": { "vi": "Địa Tạng Vương Bồ Tát", "en": "Kṣitigarbha" },
-    "summary_vi": "Nguyện cứu độ chúng sinh, đặc biệt gắn với lòng kiên nhẫn và trách nhiệm lâu dài.",
+    "names_other": [
+      "Kṣitigarbha",
+      "Địa Tạng Vương",
+      "Jizō"
+    ],
+    "wikipedia_titles": {
+      "vi": "Địa Tạng Vương Bồ Tát",
+      "en": "Kṣitigarbha"
+    },
+    "summary_vi": "Bồ Tát phát nguyện cứu độ chúng sinh, đặc biệt những kẻ sa vào khổ ác; biểu tượng cho kiên nhẫn, trách nhiệm lâu dài và không bỏ rơi. Thường trọc đầu hoặc đội mũ đơn giản, khác tướng Quán Âm cầm bình/liên.",
     "mudras_common_vi": [
-      { "name": "Ấn cầm pháp khí", "meaning": "Quyết tâm hành động có mục đích, không bỏ cuộc giữa khó khăn." }
+      {
+        "name": "Ấn cầm tích trượng / pháp khí",
+        "meaning": "Quyết tâm dài hạn — chống nạng tinh thần khi đi qua giai đoạn tối tăm của đời sống."
+      },
+      {
+        "name": "Ấn thí / ban cho (một số tượng)",
+        "meaning": "Cho đi sự chăm sóc, thời gian, lắng nghe — không chỉ khi thuận lợi."
+      },
+      {
+        "name": "Ấn địa (tùy trường phái)",
+        "meaning": "Gắn với đất — kiên định, hiện diện vững trong khó khăn."
+      }
     ],
     "implements_vi": [
-      { "name": "Tích trượng (gậy)", "meaning": "Mở cửa địa ngục — biểu tượng cho việc đánh thức, hỗ trợ, không bỏ rơi người đang vướng khổ." },
-      { "name": "Ngọc như ý", "meaning": "Ước nguyện chân chính — làm việc thiện với ý định trong sáng." }
+      {
+        "name": "Tích trượng (gậy sáu vòng)",
+        "meaning": "Mở ‘cửa’ địa ngục — đánh thức, hỗ trợ người đang vướng nghiệp, nghiện, trầm cảm; không bỏ rơi."
+      },
+      {
+        "name": "Ngọc như ý",
+        "meaning": "Ước nguyện chân thật — làm việc thiện với ý định trong sáng, không khoa trương."
+      },
+      {
+        "name": "Chuỗi niệm hoặc tượng nhỏ trong tay (tùy tượng)",
+        "meaning": "Nhắc nhở lặp lại điều lành, kiên trì từng ngày."
+      }
     ],
-    "mindfulness_hint_vi": "Hình ảnh Địa Tạng gợi nhớ kiên trì: những thay đổi tốt đẹp trong tâm thường cần thời gian, không ép buộc tức thì."
+    "mindfulness_hint_vi": "Địa Tạng gợi kiên trì: thay đổi tâm và thói quen thường cần thời gian; không tự trách vì chưa ‘đủ thiện’ ngay lập tức.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jizo_statue_at_Z%C5%8Dj%C5%8D-ji.jpg/960px-Jizo_statue_at_Z%C5%8Dj%C5%8D-ji.jpg",
+      "commons_file": "File:Jizo statue at Zōjō-ji.jpg",
+      "alt_vi": "Tượng Jizō / Địa Tạng tại chùa Zōjō-ji (Tokyo).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jizo_statue_at_Z%C5%8Dj%C5%8D-ji.jpg/960px-Jizo_statue_at_Z%C5%8Dj%C5%8D-ji.jpg",
+        "commons_file": "File:Jizo statue at Zōjō-ji.jpg",
+        "alt_vi": "Tượng Jizō / Địa Tạng tại chùa Zōjō-ji (Tokyo).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Jizo_Statue_at_the_Nihonji_temple_complex.jpg/960px-Jizo_Statue_at_the_Nihonji_temple_complex.jpg",
+        "alt_vi": "Địa Tạng Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Jizo Statue at the Nihonji temple complex.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sugamo_Jizo_statue.jpg",
+        "alt_vi": "Địa Tạng Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Sugamo Jizo statue.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Jizo_statue_at_Oku-no-in_2009-09-05.jpg/960px-Jizo_statue_at_Oku-no-in_2009-09-05.jpg",
+        "alt_vi": "Địa Tạng Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Jizo statue at Oku-no-in 2009-09-05.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Ksitigarbha_Statue_at_Shakuzouji_Temple.jpg/960px-Ksitigarbha_Statue_at_Shakuzouji_Temple.jpg",
+        "alt_vi": "Địa Tạng Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Ksitigarbha Statue at Shakuzouji Temple.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "maitreya",
     "name_vi": "Di Lặc Bồ Tát",
-    "names_other": ["Maitreya", "Phật Di Lặc"],
-    "wikipedia_titles": { "vi": "Di Lặc", "en": "Maitreya" },
-    "summary_vi": "Bồ Tát của tương lai, thường gắn với hỷ lạc, rộng lượng và sự cởi mở.",
+    "names_other": [
+      "Maitreya",
+      "Phật Di Lặc",
+      "Bố Đại",
+      "Budai"
+    ],
+    "wikipedia_titles": {
+      "vi": "Di Lặc",
+      "en": "Maitreya"
+    },
+    "summary_vi": "Bồ Tát của tương lai, thường gắn với hỷ lạc, rộng lượng; tại Trung Hoa/Việt Nam phổ biến hình tượng bụng lớn, nụ cười, túi vải (Bố Đại). Khác Phật Thích Ca trang nghiêm tóc uẩn.",
     "mudras_common_vi": [
-      { "name": "Ấn thiền hoặc ấn ban cho", "meaning": "An vui nội tại và sẵn sàng chia sẻ." }
+      {
+        "name": "Ấn thiền hoặc ấn đặt tay trên đầu gối",
+        "meaning": "An vui nội tại — không cần điều kiện bên ngoài hoàn hảo mới được thư giãn."
+      },
+      {
+        "name": "Ấn ban cho / mở lòng (Varada)",
+        "meaning": "Sẵn sàng chia sẻ niềm vui và của bớt cho người khác."
+      }
     ],
     "implements_vi": [
-      { "name": "Túi vải", "meaning": "Chứa muôn vật — nhắc về sự đủ đầy trong tâm khi biết buông và cho đi." }
+      {
+        "name": "Túi vải lớn",
+        "meaning": "Chứa ‘muôn thứ’ — nhắc rằng tâm có thể rộng, buông bớt chấp thủ vào của cải, danh tiếng."
+      },
+      {
+        "name": "Chuỗi hạt lớn (tùy tượng)",
+        "meaning": "Đếm nhịp thực hành — nhất niệm, một hơi thở."
+      }
     ],
-    "mindfulness_hint_vi": "Nụ cười Di Lặc mời gọi nhẹ nhàng: có thể mỉm cười với một hơi thở, thả lỏng vai, không cần lý do lớn lao."
+    "mindfulness_hint_vi": "Nụ cười Di Lặc mời một nụ cười nhỏ với vai thả lỏng, không cần lý do lớn — hỷ lạc có thể bắt đầu từ cơ thể.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Budai_Icon.svg/960px-Budai_Icon.svg.png",
+      "commons_file": "File:Budai Icon.svg",
+      "alt_vi": "Biểu tượng Bố Đại / Di Lặc (minh họa phong cách dân gian).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Budai_Icon.svg/960px-Budai_Icon.svg.png",
+        "commons_file": "File:Budai Icon.svg",
+        "alt_vi": "Biểu tượng Bố Đại / Di Lặc (minh họa phong cách dân gian).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Buddha_Taichung.jpg",
+        "alt_vi": "Di Lặc Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Buddha Taichung.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Budai_in_serpentine%2C_height_8_cm_arp.jpg/960px-Budai_in_serpentine%2C_height_8_cm_arp.jpg",
+        "alt_vi": "Di Lặc Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Budai in serpentine, height 8 cm arp.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/HK_Sheung_Wan_Hollywood_Road_%E5%A4%A7%E8%82%9A%E5%BD%8C%E5%8B%92%E4%BD%9B_Buddhist_statues.JPG/960px-HK_Sheung_Wan_Hollywood_Road_%E5%A4%A7%E8%82%9A%E5%BD%8C%E5%8B%92%E4%BD%9B_Buddhist_statues.JPG",
+        "alt_vi": "Di Lặc Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:HK Sheung Wan Hollywood Road 大肚彌勒佛 Buddhist statues.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Beijing_2006_1-09.jpg/960px-Beijing_2006_1-09.jpg",
+        "alt_vi": "Di Lặc Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Beijing 2006 1-09.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "manjushri",
     "name_vi": "Văn Thù Bồ Tát",
-    "names_other": ["Mañjuśrī"],
-    "wikipedia_titles": { "vi": "Văn Thù Bồ Tát", "en": "Mañjuśrī" },
-    "summary_vi": "Bồ Tát của trí tuệ sắc bén, thấu suốt bản chất các hiện tượng.",
+    "names_other": [
+      "Mañjuśrī",
+      "Monju",
+      "Văn Thù Sư Lợi"
+    ],
+    "wikipedia_titles": {
+      "vi": "Văn Thù Bồ Tát",
+      "en": "Mañjuśrī"
+    },
+    "summary_vi": "Bồ Tát của trí tuệ sắc bén, soi chiếu bản chất không thường hằng của các hiện tượng; thường cầm kiếm trí hoặc kinh, đôi khi cưỡi sư tử. Biểu tượng cho trí tuệ không cố chấp.",
     "mudras_common_vi": [
-      { "name": "Ấn giảng pháp / chỉ minh", "meaning": "Soi sáng hiểu biết đúng đắn, đặt câu hỏi sâu sắc với giả định của mình." }
+      {
+        "name": "Ấn giảng pháp / chỉ minh",
+        "meaning": "Đặt câu hỏi sâu với giả định của mình — không vội kết luận."
+      },
+      {
+        "name": "Ấn cầm kinh điển",
+        "meaning": "Học hỏi có hệ thống, áp dụng vào đời sống hằng ngày."
+      },
+      {
+        "name": "Ấn thiền (khi tượng tịnh lặng)",
+        "meaning": "Trí tuệ song hành với định — hiểu biết không tách khỏi tĩnh lặng."
+      }
     ],
     "implements_vi": [
-      { "name": "Kiếm trí tuệ", "meaning": "Cắt đứt si mê, cố chấp — không phải hướng ngoài trừng phạt mà là trong tâm buông bỏ chấp thủ." },
-      { "name": "Kinh Pháp Hoa hoặc kinh điển", "meaning": "Học hỏi và áp dụng giáo lý vào đời sống hằng ngày." }
+      {
+        "name": "Kiếm trí tuệ",
+        "meaning": "Cắt đứt si mê và cố chấp trong tâm — không phải để ‘chém’ người khác."
+      },
+      {
+        "name": "Kinh điển (Pháp Hoa, Bát Nhã…)",
+        "meaning": "Neo vào lời dạy để thử nghiệm trong đời thường."
+      },
+      {
+        "name": "Sư tử (tọa kỵ)",
+        "meaning": "Sức mạnh hiền hòa của trí tuệ — dũng mãnh trong việc buông ảo tưởng."
+      }
     ],
-    "mindfulness_hint_vi": "Văn Thù nhắc ta dùng trí tuệ ôn hòa: trước khi kết luận, hãy quan sát suy nghĩ như một hiện tượng đến rồi đi."
+    "mindfulness_hint_vi": "Văn Thù nhắc quan sát suy nghĩ như sự kiện trong tâm — đến rồi đi — trước khi tin hoàn toàn vào câu chuyện ‘tôi / họ’.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_statue_of_Manjushri_Bodhisattva%2C_Macang_Monastery.jpg/960px-The_statue_of_Manjushri_Bodhisattva%2C_Macang_Monastery.jpg",
+      "commons_file": "File:The statue of Manjushri Bodhisattva, Macang Monastery.jpg",
+      "alt_vi": "Tượng Văn Thù Bồ Tát (tu viện Mã Tàng).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_statue_of_Manjushri_Bodhisattva%2C_Macang_Monastery.jpg/960px-The_statue_of_Manjushri_Bodhisattva%2C_Macang_Monastery.jpg",
+        "commons_file": "File:The statue of Manjushri Bodhisattva, Macang Monastery.jpg",
+        "alt_vi": "Tượng Văn Thù Bồ Tát (tu viện Mã Tàng).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/The_Bodhisattva_Monju_%28Manjushri%29%2C_Kamakura_period%2C_Japan.jpg/960px-The_Bodhisattva_Monju_%28Manjushri%29%2C_Kamakura_period%2C_Japan.jpg",
+        "alt_vi": "Văn Thù Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:The Bodhisattva Monju (Manjushri), Kamakura period, Japan.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Bodhisattva_Manjushri_seated_in_lalitasana%2C_from_China%2C_Jin_Dynasty%2C_12th_century_CE._British_Museum.jpg/960px-Bodhisattva_Manjushri_seated_in_lalitasana%2C_from_China%2C_Jin_Dynasty%2C_12th_century_CE._British_Museum.jpg",
+        "alt_vi": "Văn Thù Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Bodhisattva Manjushri seated in lalitasana, from China, Jin Dynasty, 12th century CE. British Museum.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_Bodhisattva_Manjushri_%28Arapacana_Manjushri%29_LACMA_M.75.4.6.jpg",
+        "alt_vi": "Văn Thù Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:The Bodhisattva Manjushri (Arapacana Manjushri) LACMA M.75.4.6.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%E9%81%BC_%E9%9D%92%E9%8A%85%E9%8E%8F%E9%87%91%E4%BA%94%E9%AB%BB%E6%96%87%E6%AE%8A%E8%8F%A9%E8%96%A9%E5%83%8F-Manjushri%2C_Bodhisattva_of_Wisdom%2C_with_Five_Knots_of_Hair_%28Wuji_Wenshu%29_MET_DP170207.jpg/960px-%E9%81%BC_%E9%9D%92%E9%8A%85%E9%8E%8F%E9%87%91%E4%BA%94%E9%AB%BB%E6%96%87%E6%AE%8A%E8%8F%A9%E8%96%A9%E5%83%8F-Manjushri%2C_Bodhisattva_of_Wisdom%2C_with_Five_Knots_of_Hair_%28Wuji_Wenshu%29_MET_DP170207.jpg",
+        "alt_vi": "Văn Thù Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:遼 青銅鎏金五髻文殊菩薩像-Manjushri, Bodhisattva of Wisdom, with Five Knots of Hair (Wuji Wenshu) MET DP170207.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "samantabhadra",
     "name_vi": "Phổ Hiền Bồ Tát",
-    "names_other": ["Samantabhadra"],
-    "wikipedia_titles": { "vi": "Phổ Hiền Bồ Tát", "en": "Samantabhadra" },
-    "summary_vi": "Biểu tượng cho hạnh nguyện rộng lớn, hành động đẹp trong mọi hoàn cảnh.",
+    "names_other": [
+      "Samantabhadra",
+      "Fugen"
+    ],
+    "wikipedia_titles": {
+      "vi": "Phổ Hiền Bồ Tát",
+      "en": "Samantabhadra"
+    },
+    "summary_vi": "Biểu tượng cho hạnh nguyện rộng lớn và hành động đẹp trong mọi hoàn cảnh; thường gắn với voi trắng, hoa sen, lời phát nguyện Phổ Hiền. Khác Văn Thù (trí) — Phổ Hiền nhấn hạnh.",
     "mudras_common_vi": [
-      { "name": "Ấn nguyện / hạnh", "meaning": "Cam kết thực hành đạo đức cụ thể trong đời sống." }
+      {
+        "name": "Ấn nguyện / chắp tay cung kính",
+        "meaning": "Cam kết thực hành đạo đức cụ thể: lời nói, việc làm nhỏ hằng ngày."
+      },
+      {
+        "name": "Ấn cầm hoa sen hoặc pháp khí",
+        "meaning": "Thanh tịnh trong hành động — làm thiện không để khoe."
+      }
     ],
     "implements_vi": [
-      { "name": "Hoa sen", "meaning": "Thanh tịnh nơi bùn nhơ — làm điều thiện ngay trong đời thường khó khăn." },
-      { "name": "Voi trắng sáu ngà (thường gặp)", "meaning": "Sức mạnh hiền hòa, vững vàng của hạnh nguyện." }
+      {
+        "name": "Hoa sen",
+        "meaning": "Nở từ bùn — thực hành từ bi ngay trong đời thường khó khăn."
+      },
+      {
+        "name": "Voi trắng sáu ngà (tọa kỵ)",
+        "meaning": "Sức mạnh hiền lành, vững vàng của nguyện lực lâu dài."
+      },
+      {
+        "name": "Kinh điển hoặc ngọc (tùy tượng)",
+        "meaning": "Neo hạnh nguyện vào giáo lý, không chỉ cảm xúc nhất thời."
+      }
     ],
-    "mindfulness_hint_vi": "Phổ Hiền gợi ý: chánh niệm không chỉ khi ngồi thiền mà trong từng bước chân, lời nói, việc làm nhỏ."
+    "mindfulness_hint_vi": "Phổ Hiền gợi chánh niệm trong chuyển động: một bước chân, một lời nói có chủ tâm, không chỉ khi ngồi yên.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Samantabhadra_Bodhisattva_-_Left.jpeg/960px-Samantabhadra_Bodhisattva_-_Left.jpeg",
+      "commons_file": "File:Samantabhadra Bodhisattva - Left.jpeg",
+      "alt_vi": "Tượng Phổ Hiền Bồ Tát.",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Samantabhadra_Bodhisattva_-_Left.jpeg/960px-Samantabhadra_Bodhisattva_-_Left.jpeg",
+        "commons_file": "File:Samantabhadra Bodhisattva - Left.jpeg",
+        "alt_vi": "Tượng Phổ Hiền Bồ Tát.",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/079_Bodhisattva_Samantabhadra_on_Elephant_%2834343223774%29.jpg/960px-079_Bodhisattva_Samantabhadra_on_Elephant_%2834343223774%29.jpg",
+        "alt_vi": "Phổ Hiền Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:079 Bodhisattva Samantabhadra on Elephant (34343223774).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ming_White_Samantabhadra_Bodhisattva_%2819652922260%29.jpg/960px-Ming_White_Samantabhadra_Bodhisattva_%2819652922260%29.jpg",
+        "alt_vi": "Phổ Hiền Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Ming White Samantabhadra Bodhisattva (19652922260).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ming_Bronze_Samantabhadra_Bodhisattva_%289843342595%29.jpg/960px-Ming_Bronze_Samantabhadra_Bodhisattva_%289843342595%29.jpg",
+        "alt_vi": "Phổ Hiền Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Ming Bronze Samantabhadra Bodhisattva (9843342595).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Samantabhadra_statue.png",
+        "alt_vi": "Phổ Hiền Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Samantabhadra statue.png",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   },
   {
     "id": "bhaisajyaguru",
     "name_vi": "Dược Sư Lưu Ly Quang Vương Phật",
-    "names_other": ["Bhaiṣajyaguru", "Phật Dược Sư"],
-    "wikipedia_titles": { "vi": "Dược Sư Lưu Ly Quang Vương Phật", "en": "Bhaiṣajyaguru" },
-    "summary_vi": "Đức Phật gắn với chữa lành — thân và tâm — và sự trong sáng như lưu ly.",
+    "names_other": [
+      "Bhaiṣajyaguru",
+      "Phật Dược Sư",
+      "Medicine Buddha"
+    ],
+    "wikipedia_titles": {
+      "vi": "Dược Sư Lưu Ly Quang Vương Phật",
+      "en": "Bhaiṣajyaguru"
+    },
+    "summary_vi": "Đức Phật gắn với chữa lành thân–tâm và sự trong sáng như lưu ly; thường có sắc xanh dược, cầm bình thuốc. Khác A Di Đà nếu không có dấu hiệu Tịnh đông / dược rõ.",
     "mudras_common_vi": [
-      { "name": "Ấn cầm dược", "meaning": "Chăm sóc, điều hòa, chữa lành bằng lối sống và thái độ từ bi với thân tâm." }
+      {
+        "name": "Ấn cầm bình dược",
+        "meaning": "Chăm sóc, điều hòa — lối sống điều độ như ‘thuốc’ cho thân tâm."
+      },
+      {
+        "name": "Ấn thiền định (tay trái)",
+        "meaning": "An trú để thân khỏe hơn khi tâm không khuấy động vô ích."
+      },
+      {
+        "name": "Ấn ban cho / chữa lành (tùy tượng)",
+        "meaning": "Mở lòng nhận sự chăm sóc và cho đi sự chăm sóc."
+      }
     ],
     "implements_vi": [
-      { "name": "Bình dược", "meaning": "Những 'thuốc' của giới – định – tuệ và lối sống điều độ." }
+      {
+        "name": "Bình dược (lưu ly)",
+        "meaning": "Giới – định – tuệ; nghỉ ngơi có chủ tâm; ăn uống điều độ — ‘thuốc’ không chỉ viên thuốc."
+      },
+      {
+        "name": "Màu xanh lưu ly / hào quang xanh",
+        "meaning": "Trong và lành — gợi làm sạch thói quen có hại từng bước nhỏ."
+      }
     ],
-    "mindfulness_hint_vi": "Dược Sư nhắc ta chăm sóc căn bản: ngủ, ăn, vận động, và những giây phút nghỉ ngơi có chủ tâm."
+    "mindfulness_hint_vi": "Dược Sư nhắc chăm sóc căn bản: ngủ, ăn, cử động, và những khoảnh khắc nghỉ có chủ tâm — nền tảng cho tuệ và từ bi.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Korean_Bhaisajyaguru.jpg",
+      "commons_file": "File:Korean Bhaisajyaguru.jpg",
+      "alt_vi": "Tượng Dược Sư Phật (truyền thống Triều Tiên).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Korean_Bhaisajyaguru.jpg",
+        "commons_file": "File:Korean Bhaisajyaguru.jpg",
+        "alt_vi": "Tượng Dược Sư Phật (truyền thống Triều Tiên).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Nathaniel_U%2C_Statue_of_Medicine_Buddha.jpg/960px-Nathaniel_U%2C_Statue_of_Medicine_Buddha.jpg",
+        "alt_vi": "Dược Sư Lưu Ly Quang Vương Phật — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Nathaniel U, Statue of Medicine Buddha.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bhaisajyaguru_Lingyin_Temple.jpeg/960px-Bhaisajyaguru_Lingyin_Temple.jpeg",
+        "alt_vi": "Dược Sư Lưu Ly Quang Vương Phật — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Bhaisajyaguru Lingyin Temple.jpeg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Medicine_Buddha.jpg/960px-Medicine_Buddha.jpg",
+        "alt_vi": "Dược Sư Lưu Ly Quang Vương Phật — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Medicine Buddha.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bhaishajyaguru_or_Medicine_Buddha%2C_Tibet%2C_14th_century%2C_gilt_bronze_-_Berkeley_Art_Museum_and_Pacific_Film_Archive_-_DSC04032.JPG/960px-Bhaishajyaguru_or_Medicine_Buddha%2C_Tibet%2C_14th_century%2C_gilt_bronze_-_Berkeley_Art_Museum_and_Pacific_Film_Archive_-_DSC04032.JPG",
+        "alt_vi": "Dược Sư Lưu Ly Quang Vương Phật — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Bhaishajyaguru or Medicine Buddha, Tibet, 14th century, gilt bronze - Berkeley Art Museum and Pacific Film Archive - DSC04032.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "vairochana",
+    "name_vi": "Đại Nhật Như Lai (Phật Tỳ Lô Giá Na)",
+    "names_other": [
+      "Vairocana",
+      "Mahavairocana",
+      "Đức Phật Pháp Thân"
+    ],
+    "wikipedia_titles": {
+      "vi": "Vairocana",
+      "en": "Vairocana"
+    },
+    "summary_vi": "Biểu tượng Phật pháp thân / giác ngộ viên mãn trong Mật tông và một số hệ Đại thừa; thường ở trung tâm mandala hoặc tượng lớn điện chính. Tướng có thể tọa thiền, tay ấn giáo pháp hoặc trí khư, tùy truyền thống (Nhật, Tạng, Trung).",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn trí khư (Dharmacakra / giáo pháp)",
+        "meaning": "Chuyển vận chân lý — mời quán chiếu sự vật như tương tức, không cố định cứng."
+      },
+      {
+        "name": "Ấn thiền định với ấn minh vương (Mật tông)",
+        "meaning": "An trú trong ánh sáng giác ngộ — không tách rời đời sống thường."
+      },
+      {
+        "name": "Ấn Bodhyagri (tùy dòng)",
+        "meaning": "Gắn với trí tuệ và sức mạnh từ bi hợp nhất."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Vòng mandala / hào quang (bối cảnh)",
+        "meaning": "Mọi phương hướng đều có thể là nhắc nhở giác ngộ — không chỉ một góc ‘đúng’."
+      },
+      {
+        "name": "Tòa sen hoặc tòa sư tử (tùy tượng)",
+        "meaning": "Ngồi vững giữa khổ và nhiễm — thanh tịnh không trốn đời."
+      }
+    ],
+    "mindfulness_hint_vi": "Đại Nhật gợi nhìn sâu: cùng một việc có thể thấy nhiều lớp (thân, cảm xúc, ý nghĩa) mà không vội chốt một chiều.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Statue_of_Vairocana_Buddha_in_T%C5%8Ddai-ji.jpg",
+      "commons_file": "File:Statue of Vairocana Buddha in Tōdai-ji.jpg",
+      "alt_vi": "Tượng Đại Nhật Như Lai tại Tōdai-ji (Nara, Nhật Bản).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Statue_of_Vairocana_Buddha_in_T%C5%8Ddai-ji.jpg",
+        "commons_file": "File:Statue of Vairocana Buddha in Tōdai-ji.jpg",
+        "alt_vi": "Tượng Đại Nhật Như Lai tại Tōdai-ji (Nara, Nhật Bản).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Vairocana_Buddha_statue.jpg/960px-Vairocana_Buddha_statue.jpg",
+        "alt_vi": "Đại Nhật Như Lai (Phật Tỳ Lô Giá Na) — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Vairocana Buddha statue.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Vairocana_Buddha_in_an_ancient_temple_in_China.jpg",
+        "alt_vi": "Đại Nhật Như Lai (Phật Tỳ Lô Giá Na) — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Vairocana Buddha in an ancient temple in China.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vairocana_Buddha_in_Chinese_Buddhism.png/960px-Vairocana_Buddha_in_Chinese_Buddhism.png",
+        "alt_vi": "Đại Nhật Như Lai (Phật Tỳ Lô Giá Na) — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Vairocana Buddha in Chinese Buddhism.png",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/003_Main_Vairocana_Buddha_Statue_%289139536205%29.jpg/960px-003_Main_Vairocana_Buddha_Statue_%289139536205%29.jpg",
+        "alt_vi": "Đại Nhật Như Lai (Phật Tỳ Lô Giá Na) — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:003 Main Vairocana Buddha Statue (9139536205).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "mahasthamaprapta",
+    "name_vi": "Đại Thế Chí Bồ Tát",
+    "names_other": [
+      "Mahāsthāmaprāpta",
+      "Đại Thế Chí",
+      "Seishi"
+    ],
+    "wikipedia_titles": {
+      "vi": "Đại Thế Chí Bồ Tát",
+      "en": "Mahasthamaprapta"
+    },
+    "summary_vi": "Bồ Tát của trí tuệ ánh sáng và đại lực, thường đứng cạnh Quán Âm trong tam thánh Tây phương (A Di Đà ở giữa). Hay cầm bông sen hoặc bình, tóc búi hoặc mũ; nam tướng phổ biến.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn cầm đài sen / tay hợp cung kính",
+        "meaning": "Cung kính và mở lòng trước giáo pháp — không kiêu ngạo tri thức."
+      },
+      {
+        "name": "Ấn đặt tay trên hoặc cầm vật nhỏ (tùy tượng)",
+        "meaning": "Kết nối với nguyện lực và trí quán chiếu."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Đài sen hoặc hoa sen nở",
+        "meaning": "Trí tuệ nở từ giới hạnh và từ bi — không tách khỏi đời sống."
+      },
+      {
+        "name": "Bình hoặc lư hương (một số tượng)",
+        "meaning": "Làm trong không gian tâm — như xông nhẹ ảo não."
+      },
+      {
+        "name": "Vòng quang / tràng phan (tùy điêu khắc)",
+        "meaning": "Ánh sáng trí tuệ lan rộng — lắng nghe nhiều góc nhìn."
+      }
+    ],
+    "mindfulness_hint_vi": "Đại Thế Chí nhắc: trí không chỉ là thông tin — là thấy rõ động cơ, hậu quả và lòng từ trong hành động.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mahasthamaprapta.jpg",
+      "commons_file": "File:Mahasthamaprapta.jpg",
+      "alt_vi": "Tượng Đại Thế Chí Bồ Tát.",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mahasthamaprapta.jpg",
+        "commons_file": "File:Mahasthamaprapta.jpg",
+        "alt_vi": "Tượng Đại Thế Chí Bồ Tát.",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%E6%B8%85_%E4%BD%9A%E5%90%8D_%E6%96%87%E6%AE%8A%E9%A8%8E%E7%8D%85%E5%9C%96_%E8%BB%B8-Manjusri_Bodhisattva_MET_53_130_1.jpg",
+        "alt_vi": "Đại Thế Chí Bồ Tát — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:清 佚名 文殊騎獅圖 軸-Manjusri Bodhisattva MET 53 130 1.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Song_Dynasty_Mahasthamaprapta.jpg",
+        "alt_vi": "Đại Thế Chí Bồ Tát — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Song Dynasty Mahasthamaprapta.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bodhisattva_Mahasthamaprapta.jpg/960px-Bodhisattva_Mahasthamaprapta.jpg",
+        "alt_vi": "Đại Thế Chí Bồ Tát — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Bodhisattva Mahasthamaprapta.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Head_of_the_Bodhisattva_Dashizhi_%28Mahasthamaprapta%29%2C_southern_group_of_Xiantangshan_cave_temples%2C_Hebei%2C_China%2C_Northern_Qi_dynasty%2C_c._565_AD%2C_limestone_with_pigment_-_San_Diego_Museum_of_Art_-_DSC06522.JPG/960px-thumbnail.jpg",
+        "alt_vi": "Đại Thế Chí Bồ Tát — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Head of the Bodhisattva Dashizhi (Mahasthamaprapta), southern group of Xiantangshan cave temples, Hebei, China, Northern Qi dynasty, c. 565 AD, limestone with pigment - San Diego Museum of Art - DSC06522.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "tara",
+    "name_vi": "Độ Mẫu / Bồ Tát Tara",
+    "names_other": [
+      "Tārā",
+      "Đa La Bồ Tát",
+      "Green Tara",
+      "White Tara"
+    ],
+    "wikipedia_titles": {
+      "vi": "Tara (Phật giáo)",
+      "en": "Tara (Buddhism)"
+    },
+    "summary_vi": "Bồ tát nữ biểu tượng từ bi hành động nhanh nhẹn và cứu khổ; phổ biến ở Tạng truyền và một số dòng Mật tông. Thường một chân duỗi (tư thế sẵn sàng), cầm hoa sen hoặc utpala, màu xanh lá hoặc trắng tùy hóa thân.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn ban cho / cứu khổ (Varada)",
+        "meaning": "Mở lòng giúp đỡ — kể cả bản thân khi đang khó."
+      },
+      {
+        "name": "Ấn cầm hoa utpala / sen xanh",
+        "meaning": "Từ bi thanh lọc — từng bước nhỏ thoát khỏi thói quen độc hại."
+      },
+      {
+        "name": "Tư thế một chân duỗi (sẵn sàng đứng dậy)",
+        "meaning": "Sẵn sàng hành động có từ bi — không trì hoãn vô ích, cũng không vội vàng mất chánh niệm."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Hoa utpala / sen xanh",
+        "meaning": "Thanh lạnh trong nóng giận — chọn đáp ứng ôn hòa."
+      },
+      {
+        "name": "Vòng nguyệt hoặc hào quang nhỏ (icon)",
+        "meaning": "Ánh sáng từ bi bao quanh — nhắc bảo vệ ranh giới lành mạnh."
+      }
+    ],
+    "mindfulness_hint_vi": "Tara gợi: khi sợ hãi, có thể đặt tay lên ngực, thở sâu, và nhớ mình cũng xứng đáng được an ủi — không chỉ người khác.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/037_Green_Tara_Thangka_%2834342913234%29.jpg/960px-037_Green_Tara_Thangka_%2834342913234%29.jpg",
+      "commons_file": "File:037 Green Tara Thangka (34342913234).jpg",
+      "alt_vi": "Thangka Tara Xanh (Độ Mẫu).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/037_Green_Tara_Thangka_%2834342913234%29.jpg/960px-037_Green_Tara_Thangka_%2834342913234%29.jpg",
+        "commons_file": "File:037 Green Tara Thangka (34342913234).jpg",
+        "alt_vi": "Thangka Tara Xanh (Độ Mẫu).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Green_Arya_Tara%2C_statue_with_silk_clothes%2C_and_flower_offerings%2C_Sakya_Monastery_of_Tibetan_Buddhism%2C_Seattle%2C_Washington%2C_USA_%283708553605%29.jpg/960px-Green_Arya_Tara%2C_statue_with_silk_clothes%2C_and_flower_offerings%2C_Sakya_Monastery_of_Tibetan_Buddhism%2C_Seattle%2C_Washington%2C_USA_%283708553605%29.jpg",
+        "alt_vi": "Độ Mẫu / Bồ Tát Tara — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Green Arya Tara, statue with silk clothes, and flower offerings, Sakya Monastery of Tibetan Buddhism, Seattle, Washington, USA (3708553605).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Artemas_Liu%2C_Green_Tara_Statue.jpg/960px-Artemas_Liu%2C_Green_Tara_Statue.jpg",
+        "alt_vi": "Độ Mẫu / Bồ Tát Tara — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Artemas Liu, Green Tara Statue.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Deessa_Tara%2C_Tibet%2C_museu_d%27etnografia_de_Neuch%C3%A2tel.JPG/960px-Deessa_Tara%2C_Tibet%2C_museu_d%27etnografia_de_Neuch%C3%A2tel.JPG",
+        "alt_vi": "Độ Mẫu / Bồ Tát Tara — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Deessa Tara, Tibet, museu d'etnografia de Neuchâtel.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Green_tara_shrine_sakya_seattle.jpg/960px-Green_tara_shrine_sakya_seattle.jpg",
+        "alt_vi": "Độ Mẫu / Bồ Tát Tara — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Green tara shrine sakya seattle.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "akshobhya",
+    "name_vi": "A Sổ Bà Phật (Phật Bất Động)",
+    "names_other": [
+      "Akṣobhya",
+      "Phật phương Đông"
+    ],
+    "wikipedia_titles": {
+      "vi": "A Sổ Bà Phật",
+      "en": "Akshobhya"
+    },
+    "summary_vi": "Một trong Ngũ Phật Ngôn Minh; biểu tượng cho tâm như đất, không dao động trước giận dữ và sợ hãi. Thường sắc xanh lam, ấn chạm đất (Bhumisparsha), liên quan phương Đông.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn Chạm Đất (Bhumisparsha)",
+        "meaning": "Như đất nền — giữ vững khi cảm xúc dữ dội; không làm tổn thương bằng lời nói vội vàng."
+      },
+      {
+        "name": "Ấn thiền (tay trái)",
+        "meaning": "An trú song song với sự kiên định — không cứng nhắc thành độc đoán."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Hào quang hoặc màu xanh lam (tượng)",
+        "meaning": "Không gian lạnh, trong — gợi hạ nhiệt cơn giận bằng hơi thở và khoảng dừng."
+      },
+      {
+        "name": "Tòa sen (tùy tượng)",
+        "meaning": "Giữ đạo đức nơi ‘bùn’ phiền não."
+      }
+    ],
+    "mindfulness_hint_vi": "A Sổ Bà nhắc: giận dữ có thể được cảm nhận trong thân; không nhất thiết phải lái xe theo nó — có thể dừng một nhịp.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Akshobhya-Dhyani_Buddha.jpg/960px-Akshobhya-Dhyani_Buddha.jpg",
+      "commons_file": "File:Akshobhya-Dhyani Buddha.jpg",
+      "alt_vi": "Biểu tượng Phật A Sổ Bà (Akshobhya).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Akshobhya-Dhyani_Buddha.jpg/960px-Akshobhya-Dhyani_Buddha.jpg",
+        "commons_file": "File:Akshobhya-Dhyani Buddha.jpg",
+        "alt_vi": "Biểu tượng Phật A Sổ Bà (Akshobhya).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Akshobhya_Buddha_at_National_Museum_of_Nepal.jpg/960px-Akshobhya_Buddha_at_National_Museum_of_Nepal.jpg",
+        "alt_vi": "A Sổ Bà Phật (Phật Bất Động) — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Akshobhya Buddha at National Museum of Nepal.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Akshobhya_Buddha_10_at_National_Museum_of_Nepal_%282%29.jpg/960px-Akshobhya_Buddha_10_at_National_Museum_of_Nepal_%282%29.jpg",
+        "alt_vi": "A Sổ Bà Phật (Phật Bất Động) — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Akshobhya Buddha 10 at National Museum of Nepal (2).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Akshobhya_Buddha_10_at_National_Museum_of_Nepal.jpg/960px-Akshobhya_Buddha_10_at_National_Museum_of_Nepal.jpg",
+        "alt_vi": "A Sổ Bà Phật (Phật Bất Động) — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Akshobhya Buddha 10 at National Museum of Nepal.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Nepal_Tallest_Akshobhya_Buddha_statue_Ukuma_mahabihar_Mahabuddha_Mahabihar_Mahaboudha_Kathmandu_Nepal_Rajesh_Dhungana_%2821%29.jpg/960px-Nepal_Tallest_Akshobhya_Buddha_statue_Ukuma_mahabihar_Mahabuddha_Mahabihar_Mahaboudha_Kathmandu_Nepal_Rajesh_Dhungana_%2821%29.jpg",
+        "alt_vi": "A Sổ Bà Phật (Phật Bất Động) — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Nepal Tallest Akshobhya Buddha statue Ukuma mahabihar Mahabuddha Mahabihar Mahaboudha Kathmandu Nepal Rajesh Dhungana (21).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "ratnasambhava",
+    "name_vi": "Bảo Sinh Phật (Phật Bảo)",
+    "names_other": [
+      "Ratnasaṃbhava",
+      "Phật phương Nam"
+    ],
+    "wikipedia_titles": {
+      "vi": "Ratnasambhava",
+      "en": "Ratnasambhava"
+    },
+    "summary_vi": "Một trong Ngũ Phật Ngôn Minh (phương Nam), gắn với sự đầy đủ, công đức và từ bi như bảo châu. Thường màu vàng, ấn ban cho (Varada).",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn ban cho (Varada)",
+        "meaning": "Cho đi sự no đủ tinh thần — lòng biết ơn, sự rộng lượng."
+      },
+      {
+        "name": "Ấn thiền (tùy tượng)",
+        "meaning": "An trú trong phúc báu của giới hạnh — không kiêu mạn."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Bảo châu hoặc ngọc mani (biểu tượng)",
+        "meaning": "Giá trị thật nằm ở đức hạnh và mối quan hệ chân thành — không chỉ vật chất."
+      },
+      {
+        "name": "Tòa sen vàng / hào quang vàng",
+        "meaning": "Ánh sáng ấm của từ bi và hỷ lạc không độc hại."
+      }
+    ],
+    "mindfulness_hint_vi": "Bảo Sinh gợi: mỗi ngày ghi nhận một điều đã đủ — đủ ăn, đủ ngủ, đủ một người lắng nghe — để giảm hụt hẫng vô cớ.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Borobudur_-_Buddha_Statue_-_020_Vara_Mudra%2C_Ratnasambhava_%2811678762125%29.jpg/960px-Borobudur_-_Buddha_Statue_-_020_Vara_Mudra%2C_Ratnasambhava_%2811678762125%29.jpg",
+      "commons_file": "File:Borobudur - Buddha Statue - 020 Vara Mudra, Ratnasambhava (11678762125).jpg",
+      "alt_vi": "Tượng Ratnasambhava (Bảo Sinh) tại Borobudur.",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Borobudur_-_Buddha_Statue_-_020_Vara_Mudra%2C_Ratnasambhava_%2811678762125%29.jpg/960px-Borobudur_-_Buddha_Statue_-_020_Vara_Mudra%2C_Ratnasambhava_%2811678762125%29.jpg",
+        "commons_file": "File:Borobudur - Buddha Statue - 020 Vara Mudra, Ratnasambhava (11678762125).jpg",
+        "alt_vi": "Tượng Ratnasambhava (Bảo Sinh) tại Borobudur.",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ratnasambhava_Buddha%2C_Philadelphia_Museum_of_Art.jpg/960px-Ratnasambhava_Buddha%2C_Philadelphia_Museum_of_Art.jpg",
+        "alt_vi": "Bảo Sinh Phật (Phật Bảo) — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Ratnasambhava Buddha, Philadelphia Museum of Art.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Borobudur_-_Buddha_Statue_-_018_Vara_Mudra%2C_Ratnasambhava_%2811679158814%29.jpg/960px-Borobudur_-_Buddha_Statue_-_018_Vara_Mudra%2C_Ratnasambhava_%2811679158814%29.jpg",
+        "alt_vi": "Bảo Sinh Phật (Phật Bảo) — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Borobudur - Buddha Statue - 018 Vara Mudra, Ratnasambhava (11679158814).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Borobudur_-_Buddha_Statue_-_022_Vara_Mudra%2C_Ratnasambhava_%2811678995903%29.jpg/960px-Borobudur_-_Buddha_Statue_-_022_Vara_Mudra%2C_Ratnasambhava_%2811678995903%29.jpg",
+        "alt_vi": "Bảo Sinh Phật (Phật Bảo) — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Borobudur - Buddha Statue - 022 Vara Mudra, Ratnasambhava (11678995903).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Borobudur_-_Buddha_Statue_-_024_Vara_Mudra%2C_Ratnasambhava_%2811678715325%29.jpg/960px-Borobudur_-_Buddha_Statue_-_024_Vara_Mudra%2C_Ratnasambhava_%2811678715325%29.jpg",
+        "alt_vi": "Bảo Sinh Phật (Phật Bảo) — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Borobudur - Buddha Statue - 024 Vara Mudra, Ratnasambhava (11678715325).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "amoghasiddhi",
+    "name_vi": "Bất Không Thành Tựu Phật",
+    "names_other": [
+      "Amoghasiddhi",
+      "Phật phương Bắc"
+    ],
+    "wikipedia_titles": {
+      "en": "Amoghasiddhi"
+    },
+    "summary_vi": "Một trong Ngũ Phật Ngôn Minh (phương Bắc), biểu tượng cho hành động có ý nghĩa và thành tựu chánh đạo — không lãng phí nỗ lực vào sự hung hăng vô ích. Thường màu xanh lục, ấn sợ hãi không (Abhaya) hoặc tương tự tùy truyền thống.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn thí vô úy (Abhaya)",
+        "meaning": "Xua tan sợ hãi bằng hành động đúng đắn — bước nhỏ nhưng rõ ràng."
+      },
+      {
+        "name": "Ấn ban cho / hành động (tùy tượng)",
+        "meaning": "Biến ý định thành việc làm cụ thể — không chỉ ước mơ."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Hào quang hoặc kiếm trí (biểu tượng)",
+        "meaning": "Cắt đứt thói quen trì hoãn và tự hạ thấp không cần thiết."
+      },
+      {
+        "name": "Tòa sen hoặc kim điểu (tùy Mật tông)",
+        "meaning": "Hành động nhẹ nhàng nhưng kiên định."
+      }
+    ],
+    "mindfulness_hint_vi": "Bất Không Thành Tựu nhắc: chọn một việc nhỏ làm xong hôm nay thay vì danh sách lớn không bắt đầu.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Amoghasiddhi-Dhyanibuddha.jpg/960px-Amoghasiddhi-Dhyanibuddha.jpg",
+      "commons_file": "File:Amoghasiddhi-Dhyanibuddha.jpg",
+      "alt_vi": "Biểu tượng Phật Amoghasiddhi (Bất Không Thành Tựu).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Amoghasiddhi-Dhyanibuddha.jpg/960px-Amoghasiddhi-Dhyanibuddha.jpg",
+        "commons_file": "File:Amoghasiddhi-Dhyanibuddha.jpg",
+        "alt_vi": "Biểu tượng Phật Amoghasiddhi (Bất Không Thành Tựu).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Amoghasiddhi_Buddha_%28_%E0%A4%85%E0%A4%AE%E0%A5%8B%E0%A4%98%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%BF_%E0%A4%A4%E0%A4%A5%E0%A4%BE%E0%A4%97%E0%A4%A4_%E0%A4%AC%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7_%29.JPG",
+        "alt_vi": "Bất Không Thành Tựu Phật — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Amoghasiddhi Buddha ( अमोघसिद्धि तथागत बुद्ध ).JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Ming_era_statue_of_Amoghasiddhi_%28%E4%B8%8D%E7%A9%BA%E6%88%90%E5%B0%B1%E4%BD%9B_B%C3%B9k%C5%8Dngch%C3%A9ngji%C3%B9f%C3%B3%29%2C_one_of_the_Five_Tathagathas_%28%E4%BA%94%E6%96%B9%E4%BD%9B_W%C7%94f%C4%81ngf%C3%B3%29_or_Five_Wisdom_Buddhas_%28%E4%BA%94%E6%99%BA%E5%A6%82%E6%9D%A5_W%C7%94zh%C3%AC_R%C3%BAl%C3%A1i%29_at_Huayan_Temple_%28%E8%8F%AF%E5%9A%B4%E5%AF%BA_or_%E5%8D%8E%E4%B8%A5%E5%AF%BA%29%2C_Shanxi%2C_China.jpg/960px-thumbnail.jpg",
+        "alt_vi": "Bất Không Thành Tựu Phật — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Ming era statue of Amoghasiddhi (不空成就佛 Bùkōngchéngjiùfó), one of the Five Tathagathas (五方佛 Wǔfāngfó) or Five Wisdom Buddhas (五智如来 Wǔzhì Rúlái) at Huayan Temple (華嚴寺 or 华严寺), Shanxi, China.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/116-Amoghasiddhi-Abhaya-Mudra-Original.jpg/960px-116-Amoghasiddhi-Abhaya-Mudra-Original.jpg",
+        "alt_vi": "Bất Không Thành Tựu Phật — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:116-Amoghasiddhi-Abhaya-Mudra-Original.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/124-Amoghasiddhi-Abhaya-Mudra-Original.jpg/960px-124-Amoghasiddhi-Abhaya-Mudra-Original.jpg",
+        "alt_vi": "Bất Không Thành Tựu Phật — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:124-Amoghasiddhi-Abhaya-Mudra-Original.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "acala",
+    "name_vi": "Bất Động Minh Vương",
+    "names_other": [
+      "Acala",
+      "Fudō Myōō",
+      "Chú Kim Cương Bất Động"
+    ],
+    "wikipedia_titles": {
+      "vi": "Kim Cương thủ Bất Động tôn",
+      "en": "Acala"
+    },
+    "summary_vi": "Minh vương oai nghiêm trong Mật tông, trừ chướng và giữ giới nghiêm; thường có lửa, kiếm, dây, mặt giận dữ — không phải hung ác mà biểu tượng năng lượng dứt khoát đối trừ vô minh. Phổ biến Nhật Bản, ảnh hưởng một số điện thờ Việt Nam.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn cầm kiếm / dao trí",
+        "meaning": "Cắt đứt thói xấu và lời thề độc hại — kỷ luật từ bi với bản thân."
+      },
+      {
+        "name": "Ấn cầm dây / xích (pāśa)",
+        "meaning": "Ràng buộc ác tâm — đặt giới hạn lành mạnh với cám dỗ."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Kiếm Kim Cương",
+        "meaning": "Trí sắc — nhận ra ngay khi đang nói dối mình hoặc trì hoãn có chủ đích."
+      },
+      {
+        "name": "Dây / xích",
+        "meaning": "Giữ lời hứa với bản thân — ví dụ giờ ngủ, giờ nghỉ màn hình."
+      },
+      {
+        "name": "Hỏa luân (vầng lửa)",
+        "meaning": "Năng lượng biến đổi — chuyển hóa giận dữ thành hành động rõ ràng, không đổ lỗi."
+      }
+    ],
+    "mindfulness_hint_vi": "Bất Động Minh Vương gợi ranh giới lành: có thể nói ‘không’ với điều không phù hợp mà không cần hận thù.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Acala_statue_at_Ikebata_Mitake-jinja.jpg/960px-Acala_statue_at_Ikebata_Mitake-jinja.jpg",
+      "commons_file": "File:Acala statue at Ikebata Mitake-jinja.jpg",
+      "alt_vi": "Tượng Bất Động Minh Vương (Acala) tại đền Mitake.",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Acala_statue_at_Ikebata_Mitake-jinja.jpg/960px-Acala_statue_at_Ikebata_Mitake-jinja.jpg",
+        "commons_file": "File:Acala statue at Ikebata Mitake-jinja.jpg",
+        "alt_vi": "Tượng Bất Động Minh Vương (Acala) tại đền Mitake.",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fudo_Myoo_Museum_Rietberg_RJP_21.jpg/960px-Fudo_Myoo_Museum_Rietberg_RJP_21.jpg",
+        "alt_vi": "Bất Động Minh Vương — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Fudo Myoo Museum Rietberg RJP 21.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Daienji_Temple_-_Fudo_Myo%E2%80%99o.jpg/960px-Daienji_Temple_-_Fudo_Myo%E2%80%99o.jpg",
+        "alt_vi": "Bất Động Minh Vương — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Daienji Temple - Fudo Myo’o.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Fud%C5%8D_My%C5%8D%C5%8D_%28Seattle_Koyasan%29.png/960px-Fud%C5%8D_My%C5%8D%C5%8D_%28Seattle_Koyasan%29.png",
+        "alt_vi": "Bất Động Minh Vương — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:Fudō Myōō (Seattle Koyasan).png",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Daigo-ji_Temple_-_Stone_statue_of_Acala_at_Fud%C3%B4-d%C3%B4.jpg/960px-Daigo-ji_Temple_-_Stone_statue_of_Acala_at_Fud%C3%B4-d%C3%B4.jpg",
+        "alt_vi": "Bất Động Minh Vương — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Daigo-ji Temple - Stone statue of Acala at Fudô-dô.jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
+  },
+  {
+    "id": "prajnaparamita",
+    "name_vi": "Bát Nhã Ba La Mật Đa (hiện thân trí tuệ)",
+    "names_other": [
+      "Prajñāpāramitā",
+      "Perfection of Wisdom"
+    ],
+    "wikipedia_titles": {
+      "vi": "Bát Nhã Ba La Mật Đa",
+      "en": "Prajnaparamita"
+    },
+    "summary_vi": "Hiện thân của Bát Nhã (trí tuệ siêu việt) thường được tạo hình nữ tính, cầm kinh hoặc hoa sen; biểu tượng cho trí tuệ không chấp thủ vào ‘có / không’ cứng nhắc. Gặp trong điêu khắc Java, Tây Tạng, một số bảo tàng.",
+    "mudras_common_vi": [
+      {
+        "name": "Ấn cầm kinh Bát Nhã",
+        "meaning": "Học để buông — hiểu sâu để không cố chấp vào khái niệm."
+      },
+      {
+        "name": "Ấn thiền hoặc ấn giảng pháp",
+        "meaning": "Trí tuệ song hành với tĩnh lặng."
+      }
+    ],
+    "implements_vi": [
+      {
+        "name": "Kinh điển (sách mở)",
+        "meaning": "Lời dạy là phương tiện — không tôn sùng chữ nghĩa mà quên thực hành."
+      },
+      {
+        "name": "Hoa sen",
+        "meaning": "Trí nở từ giới và từ bi — không tách khỏi đời thường."
+      }
+    ],
+    "mindfulness_hint_vi": "Bát Nhã nhắc: mọi nhãn quan ‘tôi biết chắc’ đều có thể làm mềm lại khi thêm dữ liệu và lòng từ.",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Prajnaparamita_Java.jpg",
+      "commons_file": "File:Prajnaparamita Java.jpg",
+      "alt_vi": "Tượng Bát Nhã Ba La Mật Đa (Java, Indonesia).",
+      "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+      "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Prajnaparamita_Java.jpg",
+        "commons_file": "File:Prajnaparamita Java.jpg",
+        "alt_vi": "Tượng Bát Nhã Ba La Mật Đa (Java, Indonesia).",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Prajnaparamita_Java_Side_Detail.JPG/960px-Prajnaparamita_Java_Side_Detail.JPG",
+        "alt_vi": "Bát Nhã Ba La Mật Đa (hiện thân trí tuệ) — minh họa từ Wikimedia Commons (2).",
+        "commons_file": "File:Prajnaparamita Java Side Detail.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Prajnaparamita_Java_Front.JPG/960px-Prajnaparamita_Java_Front.JPG",
+        "alt_vi": "Bát Nhã Ba La Mật Đa (hiện thân trí tuệ) — minh họa từ Wikimedia Commons (3).",
+        "commons_file": "File:Prajnaparamita Java Front.JPG",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/048_Prajnaparamita_detail_by_Gunawan_Kartapranata_%2822863041013%29.jpg/960px-048_Prajnaparamita_detail_by_Gunawan_Kartapranata_%2822863041013%29.jpg",
+        "alt_vi": "Bát Nhã Ba La Mật Đa (hiện thân trí tuệ) — minh họa từ Wikimedia Commons (4).",
+        "commons_file": "File:048 Prajnaparamita detail by Gunawan Kartapranata (22863041013).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pelita_VI_%28Women_of_Indonesia%29%2C_100rp_%281994%29.jpg/960px-Pelita_VI_%28Women_of_Indonesia%29%2C_100rp_%281994%29.jpg",
+        "alt_vi": "Bát Nhã Ba La Mật Đa (hiện thân trí tuệ) — minh họa từ Wikimedia Commons (5).",
+        "commons_file": "File:Pelita VI (Women of Indonesia), 100rp (1994).jpg",
+        "credit_vi": "Ảnh: Wikimedia Commons — xem trang tệp trên Commons để biết tác giả và giấy phép sử dụng.",
+        "credit_en": "Image: Wikimedia Commons — see the file page on Commons for author and license."
+      }
+    ]
   }
 ]

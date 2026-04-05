@@ -2,8 +2,33 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var th = localStorage.getItem('gautama-theme')
+          if (th === 'light' || th === 'dark') {
+            document.documentElement.setAttribute('data-theme', th)
+          } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark')
+          }
+          var loc = localStorage.getItem('gautama-locale')
+          if (loc === 'en' || loc === 'vi') document.documentElement.lang = loc
+        } catch (e) {}
+      })()
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#2a2420" />
+    <meta name="description" content="Nhận diện tượng Phật/Bồ Tát — thủ ấn, pháp khí và chánh niệm." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Nhận diện biểu tượng Phật giáo</title>
   </head>
   <body>

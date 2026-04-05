@@ -1,0 +1,301 @@
+{
+  "shakyamuni": {
+    "summary": "The historical Buddha of early Buddhism and a reference for many Mahayana traditions; he represents awakening through wisdom and compassion. Statues are usually male, with ushnisha and monastic robes.",
+    "mindfulness_hint": "Images of Shakyamuni invite a pause: notice what is felt in the body, then choose a response with intention rather than autopilot habit.",
+    "mudras_common": [
+      {
+        "name": "Bhumisparsha mudra (earth-touching)",
+        "meaning": "Calling the earth as witness — steadiness and clear presence before distraction; an anchor in difficulty."
+      },
+      {
+        "name": "Dharmachakra mudra (turning the wheel)",
+        "meaning": "Turning the wheel of teaching — sharing understanding with an open mind."
+      },
+      {
+        "name": "Dhyana mudra (meditation)",
+        "meaning": "Settling body and breath — finding stillness even on busy days."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Alms bowl (in some statues)",
+        "meaning": "Simple sufficiency and receiving what life offers without extravagance."
+      }
+    ]
+  },
+  "amitabha": {
+    "summary": "The Buddha of infinite light and life, central to Pure Land traditions; he symbolizes faith and aspiration toward awakening. Often shown seated in meditation, similar to a Buddha form but linked to the Western Pure Land.",
+    "mindfulness_hint": "Boundless light can mean: soften the small fearful self, widen the heart toward one difficult person or moment.",
+    "mudras_common": [
+      {
+        "name": "Dhyana mudra",
+        "meaning": "Inner reception and calm — making room to ‘return’ to what is wholesome."
+      },
+      {
+        "name": "Welcoming / guiding gesture (common in Pure Land art)",
+        "meaning": "An open hand reaching out — compassion toward oneself and others."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Lotus throne",
+        "meaning": "Purity arising from the mud — goodness growing in imperfect conditions."
+      }
+    ]
+  },
+  "avalokiteshvara": {
+    "summary": "The bodhisattva of compassion, often shown with a vase, willow branch, or thousand-armed form. The figure embodies listening and responding to suffering without turning away.",
+    "mindfulness_hint": "Avalokiteshvara suggests layered listening: first body (breath, tension), then sounds, then words — delaying judgment.",
+    "mudras_common": [
+      {
+        "name": "Varada / blessing gesture",
+        "meaning": "Offering care and patience — not only when it is easy."
+      },
+      {
+        "name": "Holding vase or willow",
+        "meaning": "Gentle cleansing of ‘dust’ — flexible mind, less rigid grasping."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Willow branch or vase",
+        "meaning": "Gentle, flexible compassion in daily friction."
+      },
+      {
+        "name": "Lotus or māṇi jewel",
+        "meaning": "Clarity and vow arising from muddy conditions."
+      }
+    ]
+  },
+  "kshitigarbha": {
+    "summary": "The bodhisattva who vows to save beings, especially those in difficult realms; he stands for patience and long-term responsibility. Often shown shaved head or simple crown, with khakkhara and wish-fulfilling jewel — distinct from Guanyin’s vase/lotus.",
+    "mindfulness_hint": "Kṣitigarbha suggests patience: heart and habits change slowly; less self-blame when change is not instant.",
+    "mudras_common": [
+      {
+        "name": "Holding khakkhara (staff)",
+        "meaning": "Long-haul resolve — a ‘walking stick’ for dark stretches of life."
+      },
+      {
+        "name": "Giving / bestowal (some statues)",
+        "meaning": "Offering time, care, and listening — not only when convenient."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Khakkhara (six-ring staff)",
+        "meaning": "Opening the ‘gates’ of stuck habits — supporting those caught in addiction or despair."
+      },
+      {
+        "name": "Cintāmaṇi (wish-fulfilling jewel)",
+        "meaning": "True aspiration — doing good with clear intention, not show."
+      }
+    ]
+  },
+  "maitreya": {
+    "summary": "The bodhisattva of the future, often joyful and generous; in East Asia the ‘laughing Buddha’ with large belly and cloth sack is widespread. Differs from solemn, ushnisha Shakyamuni.",
+    "mindfulness_hint": "Maitreya’s smile invites a small smile and relaxed shoulders — joy can start in the body without a big reason.",
+    "mudras_common": [
+      {
+        "name": "Meditation or hands on knees",
+        "meaning": "Ease that does not depend on perfect outer conditions."
+      },
+      {
+        "name": "Varada (giving)",
+        "meaning": "Sharing joy and surplus with others."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Cloth sack",
+        "meaning": "Carrying what is enough to share — simplicity and generosity."
+      }
+    ]
+  },
+  "manjushri": {
+    "summary": "The bodhisattva of wisdom, often with sword and scripture, sometimes a lion mount. He represents sharp, compassionate insight rather than mere cleverness.",
+    "mindfulness_hint": "Mañjuśrī reminds us to watch thoughts as events in the mind — arising and passing — before fully believing the ‘me / them’ story.",
+    "mudras_common": [
+      {
+        "name": "Teaching or holding sutra",
+        "meaning": "Aligning speech and study with kindness."
+      },
+      {
+        "name": "Sword of wisdom",
+        "meaning": "Cutting through confusion — naming delusion without cruelty."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Prajñāpāramitā sutra",
+        "meaning": "Wisdom carried into life — not only book knowledge."
+      }
+    ]
+  },
+  "samantabhadra": {
+    "summary": "The bodhisattva of great vow and practice, often with white elephant and lotus. He embodies ethical, embodied mindfulness in motion.",
+    "mindfulness_hint": "Samantabhadra suggests mindful movement: one step, one kind word — not only on the cushion.",
+    "mudras_common": [
+      {
+        "name": "Offering or prayerful gesture",
+        "meaning": "Dedicating action to benefit — small vows in ordinary tasks."
+      }
+    ],
+    "implements": [
+      {
+        "name": "White elephant",
+        "meaning": "Power and steadiness directed toward compassion."
+      },
+      {
+        "name": "Lotus",
+        "meaning": "Clarity rising from ordinary ground."
+      }
+    ]
+  },
+  "bhaisajyaguru": {
+    "summary": "The Medicine Buddha of lapis light, often with medicine bowl and healing symbolism. Distinguished from Amitabha when medicine / healing signs are clear.",
+    "mindfulness_hint": "Bhaiṣajyaguru points to basics: sleep, food, movement, and rest with awareness — a base for wisdom and care.",
+    "mudras_common": [
+      {
+        "name": "Medicine-bowl gesture",
+        "meaning": "Holding well-being for self and others — practical care."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Medicine bowl",
+        "meaning": "Healing offered without hoarding — sharing remedies and attention."
+      },
+      {
+        "name": "Lapis / blue light imagery",
+        "meaning": "Calm, cooling presence in pain or anxiety."
+      }
+    ]
+  },
+  "vairochana": {
+    "summary": "The cosmic / dharma-body Buddha, central in many mandalas and esoteric halls. Mudrās such as teaching or wisdom-realm gestures appear on large main icons.",
+    "mindfulness_hint": "Vairocana suggests seeing layers: body, feeling, meaning — without rushing to one fixed story.",
+    "mudras_common": [
+      {
+        "name": "Dharmachakra or teaching mudrā",
+        "meaning": "Teaching as relational — turning understanding toward others."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Wheel or central maṇḍala role",
+        "meaning": "Interconnection — one center radiating clarity."
+      }
+    ]
+  },
+  "mahasthamaprapta": {
+    "summary": "Often paired with Amitabha and Avalokiteshvara in the Western triad; male form, lotus or vase motifs. Distinguish carefully from Guanyin when attributes are unclear.",
+    "mindfulness_hint": "Mahāsthāmaprāpta: wisdom is not only information — seeing motive, consequence, and kindness in action.",
+    "mudras_common": [
+      {
+        "name": "Meditation or offering",
+        "meaning": "Steady vow alongside compassion."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Lotus",
+        "meaning": "Pure aspiration amid ordinary life."
+      }
+    ]
+  },
+  "tara": {
+    "summary": "A female bodhisattva, often one leg extended, holding utpala (blue lotus), in Tibetan and related traditions. Not the same as Guanyin when iconography differs.",
+    "mindfulness_hint": "Tārā: when afraid, hand on chest, slow breath — remembering you also deserve comfort, not only others.",
+    "mudras_common": [
+      {
+        "name": "Varada / refuge gesture",
+        "meaning": "Safety and shelter offered and received."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Utpala flower",
+        "meaning": "Compassion unfolding step by step."
+      }
+    ]
+  },
+  "akshobhya": {
+    "summary": "The ‘immovable’ Buddha of the East, often blue, with earth-touching gesture in Five-Buddha schemes.",
+    "mindfulness_hint": "Akṣobhya: anger can be felt in the body; you need not drive the car of action with it — pause one beat.",
+    "mudras_common": [
+      {
+        "name": "Bhumisparsha",
+        "meaning": "Unshakable presence — witness like earth."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Eastern / vajra imagery (tradition-dependent)",
+        "meaning": "Stability as a direction of practice."
+      }
+    ]
+  },
+  "ratnasambhava": {
+    "summary": "Jewel-born Buddha of the South, golden, often Varada mudra, in Five-Buddha maṇḍalas.",
+    "mindfulness_hint": "Ratnasambhava: note one thing that is enough today — food, sleep, one listener — easing hollow striving.",
+    "mudras_common": [
+      {
+        "name": "Varada (giving)",
+        "meaning": "Generosity and abundance of heart."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Jewel",
+        "meaning": "Precious qualities to share, not hoard."
+      }
+    ]
+  },
+  "amoghasiddhi": {
+    "summary": "The ‘unfailing success’ Buddha of the North, green, often Abhaya mudra, in Five-Buddha systems.",
+    "mindfulness_hint": "Amoghasiddhi: finish one small thing today instead of a huge list never started.",
+    "mudras_common": [
+      {
+        "name": "Abhaya (fearlessness)",
+        "meaning": "Confidence without aggression."
+      }
+    ],
+    "implements": []
+  },
+  "acala": {
+    "summary": "A wrathful wisdom king with fire, sword, or rope — fierce compassion, not gentle seated Buddha forms.",
+    "mindfulness_hint": "Acala: boundaries can be kind — saying ‘no’ to what harms without hatred.",
+    "mudras_common": [
+      {
+        "name": "Wrathful mudrās / weapon holds",
+        "meaning": "Cutting through denial with clarity."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Sword",
+        "meaning": "Cutting delusion, not people."
+      },
+      {
+        "name": "Rope / bond imagery",
+        "meaning": "Restraining harm skillfully."
+      }
+    ]
+  },
+  "prajnaparamita": {
+    "summary": "Personification of the Perfection of Wisdom — often female, with book or lotus. Distinguish from Tārā when attributes differ.",
+    "mindfulness_hint": "Prajñāpāramitā: any fixed ‘I know for sure’ can soften when more data and kindness enter.",
+    "mudras_common": [
+      {
+        "name": "Teaching or holding text",
+        "meaning": "Wisdom embodied — study serving compassion."
+      }
+    ],
+    "implements": [
+      {
+        "name": "Prajñāpāramitā text / lotus",
+        "meaning": "Insight that frees rather than hardens."
+      }
+    ]
+  }
+}
