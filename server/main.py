@@ -18,12 +18,17 @@ _SERVER_DIR = Path(__file__).resolve().parent
 load_dotenv(_SERVER_DIR / ".env")
 
 import httpx
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
 
 KNOWLEDGE_PATH = Path(__file__).resolve().parent / "knowledge" / "figures.json"
 FIGURES_EN_PATH = Path(__file__).resolve().parent / "knowledge" / "figures_en.json"
+
+try:
+    from analytics_store import get_dashboard, record_visit
+except ImportError:
+    from server.analytics_store import get_dashboard, record_visit
 
 
 def _cors_allow_origins() -> list[str]:
@@ -141,6 +146,48 @@ async def wikipedia_for_figure(fig: dict[str, Any]) -> dict[str, str | None]:
 @app.get("/api/health")
 async def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+def _client_ip(request: Request) -> str:
+    xff = request.headers.get("x-forwarded-for") or request.headers.get("X-Forwarded-For")
+    if xff:
+        return xff.split(",")[0].strip()[:128]
+    if request.client:
+        return (request.client.host or "unknown")[:128]
+    return "unknown"
+
+
+def _require_admin(request: Request) -> None:
+    secret = os.environ.get("ADMIN_ANALYTICS_SECRET", "").strip()
+    if not secret:
+        raise HTTPException(status_code=503, detail="admin_analytics_disabled")
+    auth = request.headers.get("authorization") or request.headers.get("Authorization") or ""
+    if not auth.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="unauthorized")
+    token = auth[7:].strip()
+    if token != secret:
+        raise HTTPException(status_code=401, detail="unauthorized")
+
+
+@app.post("/api/analytics/visit")
+async def analytics_visit(request: Request) -> dict[str, bool]:
+    """Ghi một lượt mở app (gọi từ frontend). IP lấy từ X-Forwarded-For khi có proxy."""
+    try:
+        record_visit(_client_ip(request), request.headers.get("user-agent"))
+    except OSError:
+        return {"ok": False}
+    return {"ok": True}
+
+
+@app.get("/api/analytics/dashboard")
+async def analytics_dashboard(request: Request, granularity: str = "day") -> dict[str, Any]:
+    """Thống kê theo ngày / tuần / tháng / năm + lượt gần đây + top IP (cần Bearer ADMIN_ANALYTICS_SECRET)."""
+    _require_admin(request)
+    g = granularity if granularity in ("day", "week", "month", "year") else "day"
+    try:
+        return get_dashboard(g)
+    except OSError:
+        raise HTTPException(status_code=503, detail="analytics_storage_unavailable") from None
 
 
 @app.get("/api/figures")

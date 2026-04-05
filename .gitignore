@@ -28,6 +28,7 @@ server/knowledge/*.tmp
 .env.test.local
 .env.production.local
 server/.env
+server/data/
 
 # --- Logs & Debug ---
 *.log
