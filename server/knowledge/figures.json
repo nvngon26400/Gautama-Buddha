@@ -1,0 +1,118 @@
+[
+  {
+    "id": "shakyamuni",
+    "name_vi": "Phật Thích Ca Mâu Ni",
+    "names_other": ["Gautama Buddha", "Tất-đạt-đa Cồ-đàm"],
+    "wikipedia_titles": { "vi": "Gautama Buddha", "en": "Gautama Buddha" },
+    "summary_vi": "Bậc Giác ngộ lịch sử của Phật giáo, biểu tượng cho trí tuệ và từ bi đã dứt khổ đau.",
+    "mudras_common_vi": [
+      { "name": "Ấn Chuyển Pháp Luân (Dharmachakra mudra)", "meaning": "Chỉ sự chuyển vận giáo pháp, lời mời quán chiếu Trung đạo." },
+      { "name": "Ấn Thiền Định (Dhyana mudra)", "meaning": "Tĩnh lặng nội tâm, an trú trong chánh niệm." },
+      { "name": "Ấn Chạm Đất (Bhumisparsha mudra)", "meaning": "Nhân chứng của sự tỉnh thức, kiên định trước chướng ngại." }
+    ],
+    "implements_vi": [],
+    "mindfulness_hint_vi": "Hình ảnh đức Phật thường gợi nhớ: dừng lại, nhìn thẳng vào kinh nghiệm hiện tại, và chọn hành động có chánh niệm thay vì phản ứng vô thức."
+  },
+  {
+    "id": "amitabha",
+    "name_vi": "Phật A Di Đà",
+    "names_other": ["Amitābha", "Amitāyus"],
+    "wikipedia_titles": { "vi": "A Di Đà", "en": "Amitābha" },
+    "summary_vi": "Đức Phật của ánh sáng và thọ mạng vô lượng, trọng tâm tịnh độ tại một số truyền thống Đại thừa.",
+    "mudras_common_vi": [
+      { "name": "Ấn Thiền Định (Dhyana mudra)", "meaning": "An trú, tiếp nhận trong tĩnh lặng." },
+      { "name": "Ấn Tiếp Dẫn (Varada / mở lòng ban cho)", "meaning": "Lòng mở, sẵn sàng nương tựa vào chánh pháp và lòng từ." }
+    ],
+    "implements_vi": [],
+    "mindfulness_hint_vi": "Biểu tượng ánh sáng vô lượng có thể được hiểu như nhắc nhở: mở rộng không gian tâm, buông bớt thu hẹp vào 'tôi nhỏ bé' đang lo sợ."
+  },
+  {
+    "id": "avalokiteshvara",
+    "name_vi": "Quán Thế Âm Bồ Tát",
+    "names_other": ["Avalokiteśvara", "Quan Âm", "Guanyin"],
+    "wikipedia_titles": { "vi": "Quan Âm", "en": "Avalokiteśvara" },
+    "summary_vi": "Bồ Tát của lòng từ bi lắng nghe tiếng khổ của chúng sinh, biểu tượng cho từ bi hành động.",
+    "mudras_common_vi": [
+      { "name": "Ấn Cầm Bình / liên hoa", "meaning": "Tưới mát, thanh lọc và chữa lành bằng từ bi." },
+      { "name": "Ấn thiên thủ (trong hóa thân Thiên Thủ)", "meaning": "Nhiều phương tiện để đáp ứng khổ đau đa dạng." }
+    ],
+    "implements_vi": [
+      { "name": "Bình cam lồ", "meaning": "Nước cam lộ — gợi ý sự trong lành, an ủi, làm dịu nóng giận và bi quan." },
+      { "name": "Cành dương liễu", "meaning": "Nhẹ nhàng quét bụi trần — buông bớt cứng nhắc, mềm mỏng với bản thân và người khác." }
+    ],
+    "mindfulness_hint_vi": "Quán Âm nhắc ta lắng nghe: trước hết là âm thanh và cảm xúc trong thân, rồi mới đến lời người khác — không vội phán xét."
+  },
+  {
+    "id": "kshitigarbha",
+    "name_vi": "Địa Tạng Bồ Tát",
+    "names_other": ["Kṣitigarbha", "Địa Tạng Vương"],
+    "wikipedia_titles": { "vi": "Địa Tạng Vương Bồ Tát", "en": "Kṣitigarbha" },
+    "summary_vi": "Nguyện cứu độ chúng sinh, đặc biệt gắn với lòng kiên nhẫn và trách nhiệm lâu dài.",
+    "mudras_common_vi": [
+      { "name": "Ấn cầm pháp khí", "meaning": "Quyết tâm hành động có mục đích, không bỏ cuộc giữa khó khăn." }
+    ],
+    "implements_vi": [
+      { "name": "Tích trượng (gậy)", "meaning": "Mở cửa địa ngục — biểu tượng cho việc đánh thức, hỗ trợ, không bỏ rơi người đang vướng khổ." },
+      { "name": "Ngọc như ý", "meaning": "Ước nguyện chân chính — làm việc thiện với ý định trong sáng." }
+    ],
+    "mindfulness_hint_vi": "Hình ảnh Địa Tạng gợi nhớ kiên trì: những thay đổi tốt đẹp trong tâm thường cần thời gian, không ép buộc tức thì."
+  },
+  {
+    "id": "maitreya",
+    "name_vi": "Di Lặc Bồ Tát",
+    "names_other": ["Maitreya", "Phật Di Lặc"],
+    "wikipedia_titles": { "vi": "Di Lặc", "en": "Maitreya" },
+    "summary_vi": "Bồ Tát của tương lai, thường gắn với hỷ lạc, rộng lượng và sự cởi mở.",
+    "mudras_common_vi": [
+      { "name": "Ấn thiền hoặc ấn ban cho", "meaning": "An vui nội tại và sẵn sàng chia sẻ." }
+    ],
+    "implements_vi": [
+      { "name": "Túi vải", "meaning": "Chứa muôn vật — nhắc về sự đủ đầy trong tâm khi biết buông và cho đi." }
+    ],
+    "mindfulness_hint_vi": "Nụ cười Di Lặc mời gọi nhẹ nhàng: có thể mỉm cười với một hơi thở, thả lỏng vai, không cần lý do lớn lao."
+  },
+  {
+    "id": "manjushri",
+    "name_vi": "Văn Thù Bồ Tát",
+    "names_other": ["Mañjuśrī"],
+    "wikipedia_titles": { "vi": "Văn Thù Bồ Tát", "en": "Mañjuśrī" },
+    "summary_vi": "Bồ Tát của trí tuệ sắc bén, thấu suốt bản chất các hiện tượng.",
+    "mudras_common_vi": [
+      { "name": "Ấn giảng pháp / chỉ minh", "meaning": "Soi sáng hiểu biết đúng đắn, đặt câu hỏi sâu sắc với giả định của mình." }
+    ],
+    "implements_vi": [
+      { "name": "Kiếm trí tuệ", "meaning": "Cắt đứt si mê, cố chấp — không phải hướng ngoài trừng phạt mà là trong tâm buông bỏ chấp thủ." },
+      { "name": "Kinh Pháp Hoa hoặc kinh điển", "meaning": "Học hỏi và áp dụng giáo lý vào đời sống hằng ngày." }
+    ],
+    "mindfulness_hint_vi": "Văn Thù nhắc ta dùng trí tuệ ôn hòa: trước khi kết luận, hãy quan sát suy nghĩ như một hiện tượng đến rồi đi."
+  },
+  {
+    "id": "samantabhadra",
+    "name_vi": "Phổ Hiền Bồ Tát",
+    "names_other": ["Samantabhadra"],
+    "wikipedia_titles": { "vi": "Phổ Hiền Bồ Tát", "en": "Samantabhadra" },
+    "summary_vi": "Biểu tượng cho hạnh nguyện rộng lớn, hành động đẹp trong mọi hoàn cảnh.",
+    "mudras_common_vi": [
+      { "name": "Ấn nguyện / hạnh", "meaning": "Cam kết thực hành đạo đức cụ thể trong đời sống." }
+    ],
+    "implements_vi": [
+      { "name": "Hoa sen", "meaning": "Thanh tịnh nơi bùn nhơ — làm điều thiện ngay trong đời thường khó khăn." },
+      { "name": "Voi trắng sáu ngà (thường gặp)", "meaning": "Sức mạnh hiền hòa, vững vàng của hạnh nguyện." }
+    ],
+    "mindfulness_hint_vi": "Phổ Hiền gợi ý: chánh niệm không chỉ khi ngồi thiền mà trong từng bước chân, lời nói, việc làm nhỏ."
+  },
+  {
+    "id": "bhaisajyaguru",
+    "name_vi": "Dược Sư Lưu Ly Quang Vương Phật",
+    "names_other": ["Bhaiṣajyaguru", "Phật Dược Sư"],
+    "wikipedia_titles": { "vi": "Dược Sư Lưu Ly Quang Vương Phật", "en": "Bhaiṣajyaguru" },
+    "summary_vi": "Đức Phật gắn với chữa lành — thân và tâm — và sự trong sáng như lưu ly.",
+    "mudras_common_vi": [
+      { "name": "Ấn cầm dược", "meaning": "Chăm sóc, điều hòa, chữa lành bằng lối sống và thái độ từ bi với thân tâm." }
+    ],
+    "implements_vi": [
+      { "name": "Bình dược", "meaning": "Những 'thuốc' của giới – định – tuệ và lối sống điều độ." }
+    ],
+    "mindfulness_hint_vi": "Dược Sư nhắc ta chăm sóc căn bản: ngủ, ăn, vận động, và những giây phút nghỉ ngơi có chủ tâm."
+  }
+]
