@@ -1,0 +1,214 @@
+.welcome-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right))
+    max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+}
+
+.welcome-splash__veil {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  animation: welcome-veil-in 0.85s var(--ease-out, ease-out) forwards;
+}
+
+.welcome-splash--out .welcome-splash__veil {
+  animation: welcome-veil-out 0.65s var(--ease-out, ease-out) forwards;
+}
+
+@keyframes welcome-veil-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes welcome-veil-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.welcome-splash__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: min(96vw, 28rem);
+  animation: welcome-content-in 1.05s var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)) 0.12s both;
+}
+
+.welcome-splash--out .welcome-splash__content {
+  animation: welcome-content-out 0.65s var(--ease-out, ease-out) forwards;
+}
+
+@keyframes welcome-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.94);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes welcome-content-out {
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+    filter: blur(4px);
+  }
+}
+
+.welcome-splash__glow {
+  position: absolute;
+  width: min(135%, 320px);
+  aspect-ratio: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--gold) 35%, transparent) 0%,
+    color-mix(in srgb, var(--accent) 12%, transparent) 42%,
+    transparent 68%
+  );
+  animation: welcome-glow-pulse 2.8s ease-in-out 0.2s infinite alternate;
+  pointer-events: none;
+}
+
+.welcome-splash--out .welcome-splash__glow {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes welcome-glow-pulse {
+  from {
+    opacity: 0.65;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.welcome-splash__figure {
+  position: relative;
+  z-index: 1;
+  width: min(82vw, 320px);
+  animation: welcome-figure-float 2.4s ease-in-out 0.5s infinite alternate;
+}
+
+.welcome-splash__figure--photo {
+  width: min(94vw, 400px);
+}
+
+.welcome-splash__photo-frame {
+  width: 100%;
+  height: min(62vh, 440px);
+  max-height: 440px;
+  overflow: hidden;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-splash--out .welcome-splash__figure {
+  animation: none;
+}
+
+@keyframes welcome-figure-float {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-5px) scale(1.015);
+  }
+}
+
+.welcome-splash__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(56vh, 360px);
+  object-fit: contain;
+  filter: drop-shadow(0 10px 28px color-mix(in srgb, var(--gold) 32%, transparent))
+    drop-shadow(0 2px 0 color-mix(in srgb, var(--text) 6%, transparent));
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Ảnh JPG: crop + zoom vào tượng (giảm nền xung quanh) */
+.welcome-splash__img--photo {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 28%;
+  transform: scale(1.22);
+  transform-origin: center 32%;
+  filter: drop-shadow(0 12px 32px color-mix(in srgb, var(--gold) 28%, transparent))
+    drop-shadow(0 2px 0 color-mix(in srgb, var(--text) 5%, transparent));
+}
+
+.welcome-splash__line {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-h);
+  text-align: center;
+  opacity: 0;
+  animation: welcome-line-in 0.9s var(--ease-out) 0.45s forwards;
+}
+
+.welcome-splash--out .welcome-splash__line {
+  animation: welcome-line-out 0.5s ease forwards;
+}
+
+@keyframes welcome-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes welcome-line-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-splash {
+    display: none !important;
+  }
+}

@@ -9,6 +9,7 @@ import {
 } from './persistState.js'
 import { STORAGE_LOCALE, STORAGE_THEME } from './storageKeys.js'
 import { CameraCaptureModal } from './CameraCaptureModal.jsx'
+import { WelcomeSplash } from './WelcomeSplash.jsx'
 import { FigureImageCarousel } from './FigureImageCarousel.jsx'
 const LunarCalendarPanel = lazy(() =>
   import('./LunarCalendarPanel.jsx').then((m) => ({ default: m.LunarCalendarPanel })),
@@ -381,6 +382,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="app__bg" aria-hidden="true" />
+      <WelcomeSplash t={t} />
       <a href="#main" className="skip-link">
         {t('skipNav')}
       </a>

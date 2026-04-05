@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="38 18 124 232" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="robe-gold" x1="35%" y1="0%" x2="65%" y2="100%">
+      <stop offset="0%" stop-color="#f0d78c"/>
+      <stop offset="35%" stop-color="#c9a227"/>
+      <stop offset="70%" stop-color="#9a7329"/>
+      <stop offset="100%" stop-color="#6b5420"/>
+    </linearGradient>
+    <linearGradient id="robe-shadow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#8b6914" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3d2e0a" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="face" x1="50%" y1="15%" x2="50%" y2="85%">
+      <stop offset="0%" stop-color="#f5e6c8"/>
+      <stop offset="100%" stop-color="#deb887"/>
+    </linearGradient>
+    <linearGradient id="lotus-petal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c547"/>
+      <stop offset="100%" stop-color="#a67c2c"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.35"/>
+    </filter>
+  </defs>
+  <ellipse cx="100" cy="38" rx="10" ry="8" fill="url(#robe-gold)"/>
+  <ellipse cx="100" cy="36" rx="6" ry="5" fill="#f5e6c8" opacity="0.6"/>
+  <circle cx="100" cy="58" r="22" fill="url(#face)" stroke="#c9a227" stroke-width="0.5" opacity="0.4"/>
+  <path d="M88 56q6-3 12 0" stroke="#8b6914" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M100 56q6-3 12 0" stroke="#8b6914" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+  <path
+    fill="url(#robe-gold)"
+    d="M52 88c8-18 88-18 96 0v6c-12 16-12 52-12 72H64c0-20 0-56-12-72v-6z"
+  />
+  <path fill="url(#robe-shadow)" d="M56 92c10-8 78-8 88 0v4c-10 8-78 8-88 0v-4z" opacity="0.6"/>
+  <path
+    fill="#a67c2c"
+    d="M78 82c0-4 44-4 44 0v8c-14 6-30 6-44 0v-8z"
+    opacity="0.5"
+  />
+  <ellipse cx="100" cy="102" rx="28" ry="14" fill="#b8922e" opacity="0.45"/>
+  <ellipse cx="100" cy="100" rx="22" ry="11" fill="#deb887" opacity="0.5"/>
+  <path
+    stroke="#6b5420"
+    stroke-width="0.6"
+    opacity="0.35"
+    fill="none"
+    d="M70 100c10 8 50 8 60 0M75 118c8 6 42 6 50 0M72 138c12 10 44 10 56 0"
+  />
+  <g filter="url(#soft)">
+    <path
+      fill="url(#lotus-petal)"
+      d="M28 198c18-28 126-28 144 0-22 20-122 20-144 0z"
+      opacity="0.85"
+    />
+    <path
+      fill="url(#lotus-petal)"
+      d="M40 186c14-18 106-18 120 0-18 14-102 14-120 0z"
+      opacity="0.95"
+    />
+    <path
+      fill="#c9a227"
+      d="M52 208c12-10 84-10 96 0-14 12-82 12-96 0z"
+      opacity="0.5"
+    />
+  </g>
+  <path fill="#d4af5c" opacity="0.4" d="M48 192c-8-6-4-18 8-14 6 10-6 18-8 14z"/>
+  <path fill="#d4af5c" opacity="0.4" d="M152 192c8-6 4-18-8-14-6 10 6 18 8 14z"/>
+</svg>

@@ -59,7 +59,10 @@
 }
 
 /* Không ghi đè position cho skip-link (absolute) và scroll-top (fixed) */
-.app > *:not(.app__bg):not(.scroll-top):not(.skip-link):not(.scan-lightbox):not(.camera-modal) {
+.app
+  > *:not(.app__bg):not(.scroll-top):not(.skip-link):not(.scan-lightbox):not(.camera-modal):not(
+    .welcome-splash
+  ) {
   position: relative;
   z-index: 1;
 }
