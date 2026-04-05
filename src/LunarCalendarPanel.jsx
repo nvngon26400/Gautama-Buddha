@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { localizeFestivalName } from './calendar/localizeDisplay.js'
 import { buildLunarDayInfo } from './lunarDayInfo.js'
+import { parseLocalYmd } from './persistState.js'
 import { getZodiacDailyLine } from './zodiacFortune.js'
 
 const ZODIAC_EMOJI = ['🐭', '🐮', '🐯', '🐰', '🐲', '🐍', '🐴', '🐐', '🐵', '🐔', '🐶', '🐷']
@@ -12,12 +13,6 @@ function pad2(n) {
 
 function toInputValue(d) {
   return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`
-}
-
-function parseLocalYmd(s) {
-  const [y, m, d] = s.split('-').map(Number)
-  if (!y || !m || !d) return new Date()
-  return new Date(y, m - 1, d, 12, 0, 0)
 }
 
 function formatClock(d, locale) {
@@ -56,8 +51,7 @@ function splitFotoFestivals(names) {
   return { buddhist, other }
 }
 
-export function LunarCalendarPanel({ t, locale }) {
-  const [anchorDate, setAnchorDate] = useState(() => new Date())
+export function LunarCalendarPanel({ t, locale, anchorDate, onAnchorDateChange }) {
   const [nowTick, setNowTick] = useState(() => new Date())
 
   useEffect(() => {
@@ -72,11 +66,14 @@ export function LunarCalendarPanel({ t, locale }) {
     [info.foto.festivalsZh],
   )
 
-  const onDateInput = useCallback((e) => {
-    setAnchorDate(parseLocalYmd(e.target.value))
-  }, [])
+  const onDateInput = useCallback(
+    (e) => {
+      onAnchorDateChange(parseLocalYmd(e.target.value))
+    },
+    [onAnchorDateChange],
+  )
 
-  const goToday = useCallback(() => setAnchorDate(new Date()), [])
+  const goToday = useCallback(() => onAnchorDateChange(new Date()), [onAnchorDateChange])
 
   const isToday =
     anchorDate.getFullYear() === nowTick.getFullYear() &&

@@ -1,12 +1,14 @@
 import { Suspense, lazy, useCallback, useEffect, useId, useMemo, useState } from 'react'
 import './App.css'
+import { messages } from './i18n.js'
 import {
-  STORAGE_LOCALE,
-  STORAGE_THEME,
-  getInitialLocale,
-  getInitialTheme,
-  messages,
-} from './i18n.js'
+  loadPersistedState,
+  parseLocalYmd,
+  previewUrlToDataUrl,
+  saveFullSnapshot,
+} from './persistState.js'
+import { STORAGE_LOCALE, STORAGE_THEME } from './storageKeys.js'
+import { CameraCaptureModal } from './CameraCaptureModal.jsx'
 import { FigureImageCarousel } from './FigureImageCarousel.jsx'
 const LunarCalendarPanel = lazy(() =>
   import('./LunarCalendarPanel.jsx').then((m) => ({ default: m.LunarCalendarPanel })),
@@ -22,24 +24,31 @@ const AUTHOR_CONTACT = {
 
 export default function App() {
   const tabId = useId()
-  const [locale, setLocale] = useState(getInitialLocale)
-  const [theme, setTheme] = useState(getInitialTheme)
+  const persisted = useMemo(() => loadPersistedState(), [])
+
+  const [locale, setLocale] = useState(() => persisted.locale)
+  const [theme, setTheme] = useState(() => persisted.theme)
   const [showScrollTop, setShowScrollTop] = useState(false)
 
-  const [tab, setTab] = useState('scan')
-  const [previewUrl, setPreviewUrl] = useState(null)
+  const [tab, setTab] = useState(() => persisted.tab)
+  const [previewUrl, setPreviewUrl] = useState(() => persisted.imageDataUrl)
   const [file, setFile] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [scanResult, setScanResult] = useState(null)
-  const [scanError, setScanError] = useState(null)
+  const [scanResult, setScanResult] = useState(() => persisted.scanResult)
+  const [scanError, setScanError] = useState(() => persisted.scanError)
   const [previewLightboxOpen, setPreviewLightboxOpen] = useState(false)
+  const [cameraModalOpen, setCameraModalOpen] = useState(false)
   const [libraryLightboxOpen, setLibraryLightboxOpen] = useState(false)
   const [libraryLightboxSlideIndex, setLibraryLightboxSlideIndex] = useState(0)
 
   const [figures, setFigures] = useState([])
-  const [selectedId, setSelectedId] = useState(null)
+  const [selectedId, setSelectedId] = useState(() => persisted.selectedId)
   const [detail, setDetail] = useState(null)
   const [detailLoading, setDetailLoading] = useState(false)
+
+  const [calendarAnchor, setCalendarAnchor] = useState(() =>
+    persisted.calendarYmd ? parseLocalYmd(persisted.calendarYmd) : new Date(),
+  )
 
   const t = useCallback((key) => messages[locale][key] ?? key, [locale])
 
@@ -105,9 +114,40 @@ export default function App() {
 
   useEffect(() => {
     return () => {
-      if (previewUrl) URL.revokeObjectURL(previewUrl)
+      if (previewUrl?.startsWith('blob:')) URL.revokeObjectURL(previewUrl)
     }
   }, [previewUrl])
+
+  useEffect(() => {
+    let cancelled = false
+    const timer = setTimeout(async () => {
+      let imageDataUrl = null
+      if (previewUrl?.startsWith('blob:')) {
+        try {
+          imageDataUrl = await previewUrlToDataUrl(previewUrl)
+        } catch {
+          /* ignore */
+        }
+      } else if (previewUrl?.startsWith('data:')) {
+        imageDataUrl = previewUrl.length <= 2_400_000 ? previewUrl : null
+      }
+      if (cancelled) return
+      saveFullSnapshot({
+        theme,
+        locale,
+        tab,
+        selectedId,
+        scanResult,
+        scanError,
+        imageDataUrl,
+        calendarAnchor,
+      })
+    }, 480)
+    return () => {
+      cancelled = true
+      clearTimeout(timer)
+    }
+  }, [theme, locale, tab, selectedId, scanResult, scanError, previewUrl, calendarAnchor])
 
   useEffect(() => {
     setPreviewLightboxOpen(false)
@@ -170,18 +210,26 @@ export default function App() {
     }
   }, [selectedId])
 
-  const onPickFile = useCallback((ev) => {
-    const f = ev.target.files?.[0]
-    ev.target.value = ''
-    if (!f) return
+  const applyPickedFile = useCallback((f) => {
+    if (!f || !f.type.startsWith('image/')) return
     setFile(f)
     setPreviewUrl((prev) => {
-      if (prev) URL.revokeObjectURL(prev)
+      if (prev?.startsWith('blob:')) URL.revokeObjectURL(prev)
       return URL.createObjectURL(f)
     })
     setScanResult(null)
     setScanError(null)
   }, [])
+
+  const onPickFile = useCallback(
+    (ev) => {
+      const f = ev.target.files?.[0]
+      ev.target.value = ''
+      if (!f) return
+      applyPickedFile(f)
+    },
+    [applyPickedFile],
+  )
 
   const analyze = useCallback(async () => {
     if (!file) return
@@ -432,12 +480,11 @@ export default function App() {
               <div className="row wrap">
                 <label className="btn primary">
                   {t('chooseImage')}
-                  <input type="file" accept="image/*" hidden onChange={onPickFile} />
+                  <input type="file" accept="image/*" className="file-input-vhidden" onChange={onPickFile} />
                 </label>
-                <label className="btn">
+                <button type="button" className="btn" onClick={() => setCameraModalOpen(true)}>
                   {t('cameraMobile')}
-                  <input type="file" accept="image/*" capture="environment" hidden onChange={onPickFile} />
-                </label>
+                </button>
                 <button
                   type="button"
                   className={`btn primary${loading ? ' btn--loading' : ''}`}
@@ -595,7 +642,12 @@ export default function App() {
                 </p>
               }
             >
-              <LunarCalendarPanel t={t} locale={locale} />
+              <LunarCalendarPanel
+                t={t}
+                locale={locale}
+                anchorDate={calendarAnchor}
+                onAnchorDateChange={setCalendarAnchor}
+              />
             </Suspense>
           </section>
         )}
@@ -659,6 +711,13 @@ export default function App() {
           ↑
         </span>
       </button>
+
+      <CameraCaptureModal
+        open={cameraModalOpen}
+        onClose={() => setCameraModalOpen(false)}
+        onCapture={applyPickedFile}
+        t={t}
+      />
 
       {previewUrl && (
         <ScanImageLightbox

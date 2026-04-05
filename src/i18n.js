@@ -1,7 +1,8 @@
 /** UI strings — nội dung API (phân tích ảnh) vẫn theo ngôn ngữ server */
 
-export const STORAGE_THEME = 'gautama-theme'
-export const STORAGE_LOCALE = 'gautama-locale'
+import { PERSIST_KEY, STORAGE_LOCALE, STORAGE_THEME } from './storageKeys.js'
+
+export { STORAGE_LOCALE, STORAGE_THEME }
 
 export const messages = {
   vi: {
@@ -23,6 +24,16 @@ export const messages = {
     yourPhoto: 'Ảnh của bạn',
     chooseImage: 'Chọn ảnh',
     cameraMobile: 'Máy ảnh (di động)',
+    cameraDialogTitle: 'Chụp bằng camera',
+    cameraCaptureShot: 'Chụp ảnh',
+    cameraClose: 'Đóng',
+    cameraStarting: 'Đang mở camera…',
+    cameraErrDenied:
+      'Chưa có quyền dùng camera. Hãy cho phép trong trình duyệt hoặc chọn ảnh từ máy bên dưới.',
+    cameraErrNoCamera: 'Không tìm thấy camera sau — thử chọn ảnh từ máy.',
+    cameraErrUnsupported: 'Trình duyệt không hỗ trợ mở camera trực tiếp. Hãy chọn ảnh từ máy.',
+    cameraErrGeneric: 'Không mở được camera. Thử lại hoặc chọn ảnh từ máy.',
+    cameraPickFallback: 'Chọn ảnh từ máy',
     analyze: 'Phân tích',
     analyzing: 'Đang phân tích…',
     previewAlt: 'Ảnh bạn đã chọn để phân tích',
@@ -156,6 +167,16 @@ export const messages = {
     yourPhoto: 'Your image',
     chooseImage: 'Choose image',
     cameraMobile: 'Camera (mobile)',
+    cameraDialogTitle: 'Take a photo',
+    cameraCaptureShot: 'Capture',
+    cameraClose: 'Close',
+    cameraStarting: 'Starting camera…',
+    cameraErrDenied:
+      'Camera permission denied. Allow it in the browser settings, or pick an image below.',
+    cameraErrNoCamera: 'No suitable camera found — try choosing an image from your device.',
+    cameraErrUnsupported: 'This browser cannot open the camera directly. Please choose an image.',
+    cameraErrGeneric: 'Could not open the camera. Try again or pick an image.',
+    cameraPickFallback: 'Choose from device',
     analyze: 'Analyze',
     analyzing: 'Analyzing…',
     previewAlt: 'Selected image for analysis',
@@ -275,6 +296,15 @@ export const messages = {
 
 export function getInitialTheme() {
   try {
+    const raw = localStorage.getItem(PERSIST_KEY)
+    if (raw) {
+      const j = JSON.parse(raw)
+      if (j?.v === 1 && (j.theme === 'light' || j.theme === 'dark')) return j.theme
+    }
+  } catch {
+    /* ignore */
+  }
+  try {
     const s = localStorage.getItem(STORAGE_THEME)
     if (s === 'light' || s === 'dark') return s
   } catch {
@@ -287,6 +317,15 @@ export function getInitialTheme() {
 }
 
 export function getInitialLocale() {
+  try {
+    const raw = localStorage.getItem(PERSIST_KEY)
+    if (raw) {
+      const j = JSON.parse(raw)
+      if (j?.v === 1 && (j.locale === 'vi' || j.locale === 'en')) return j.locale
+    }
+  } catch {
+    /* ignore */
+  }
   try {
     const s = localStorage.getItem(STORAGE_LOCALE)
     if (s === 'vi' || s === 'en') return s
