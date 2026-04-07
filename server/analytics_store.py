@@ -20,6 +20,9 @@ def _db_path() -> Path:
     raw = os.environ.get("ANALYTICS_DB_PATH", "").strip()
     if raw:
         return Path(raw)
+    # Vercel serverless: filesystem gói deploy chỉ đọc; chỉ /tmp ghi được.
+    if os.environ.get("VERCEL"):
+        return Path("/tmp/analytics.db")
     return _SERVER_DIR / "data" / "analytics.db"
 
 

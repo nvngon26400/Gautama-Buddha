@@ -8,6 +8,7 @@ import asyncio
 import base64
 import json
 import os
+import sqlite3
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -174,7 +175,7 @@ async def analytics_visit(request: Request) -> dict[str, bool]:
     """Ghi một lượt mở app (gọi từ frontend). IP lấy từ X-Forwarded-For khi có proxy."""
     try:
         record_visit(_client_ip(request), request.headers.get("user-agent"))
-    except OSError:
+    except (OSError, sqlite3.Error):
         return {"ok": False}
     return {"ok": True}
 
@@ -186,7 +187,7 @@ async def analytics_dashboard(request: Request, granularity: str = "day") -> dic
     g = granularity if granularity in ("day", "week", "month", "year") else "day"
     try:
         return get_dashboard(g)
-    except OSError:
+    except (OSError, sqlite3.Error):
         raise HTTPException(status_code=503, detail="analytics_storage_unavailable") from None
 
 

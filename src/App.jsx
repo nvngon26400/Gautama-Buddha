@@ -8,6 +8,12 @@ import {
   saveFullSnapshot,
 } from './persistState.js'
 import { STORAGE_LOCALE, STORAGE_THEME } from './storageKeys.js'
+import {
+  addScanHistoryEntry,
+  clearScanHistory,
+  loadScanHistory,
+  removeScanHistoryEntry,
+} from './scanHistory.js'
 import { CameraCaptureModal } from './CameraCaptureModal.jsx'
 import { WelcomeSplash } from './WelcomeSplash.jsx'
 import { FigureImageCarousel } from './FigureImageCarousel.jsx'
@@ -37,6 +43,8 @@ export default function App() {
   const [loading, setLoading] = useState(false)
   const [scanResult, setScanResult] = useState(() => persisted.scanResult)
   const [scanError, setScanError] = useState(() => persisted.scanError)
+  const [scanHistory, setScanHistory] = useState(() => loadScanHistory())
+  const [historyDeleteTarget, setHistoryDeleteTarget] = useState(null)
   const [previewLightboxOpen, setPreviewLightboxOpen] = useState(false)
   const [cameraModalOpen, setCameraModalOpen] = useState(false)
   const [libraryLightboxOpen, setLibraryLightboxOpen] = useState(false)
@@ -52,6 +60,15 @@ export default function App() {
   )
 
   const t = useCallback((key) => messages[locale][key] ?? key, [locale])
+
+  const formatHistoryTime = useCallback(
+    (ts) =>
+      new Intl.DateTimeFormat(locale === 'en' ? 'en-US' : 'vi-VN', {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      }).format(new Date(ts)),
+    [locale],
+  )
 
   const librarySlides = useMemo(() => {
     if (!detail?.image?.url) return []
@@ -247,6 +264,22 @@ export default function App() {
         throw new Error(data?.detail || r.statusText)
       }
       setScanResult(data)
+      if (data.ok && data.analysis) {
+        let imageDataUrl = null
+        try {
+          imageDataUrl = await previewUrlToDataUrl(previewUrl)
+        } catch {
+          imageDataUrl = null
+        }
+        setScanHistory((prev) => {
+          const next = addScanHistoryEntry({
+            locale,
+            imageDataUrl,
+            result: data,
+          })
+          return Array.isArray(next) ? next : prev
+        })
+      }
       if (data.ok === false) {
         setScanError(data.message || data.message_vi || messages[locale].errAnalyzeFallback)
       }
@@ -255,7 +288,40 @@ export default function App() {
     } finally {
       setLoading(false)
     }
-  }, [file, locale])
+  }, [file, locale, previewUrl])
+
+  const openHistoryItem = useCallback((item) => {
+    if (!item?.result) return
+    setTab('scan')
+    setFile(null)
+    setScanError(null)
+    setScanResult(item.result)
+    setPreviewUrl(item.imageDataUrl || null)
+    setPreviewLightboxOpen(false)
+  }, [])
+
+  const requestDeleteHistoryOne = useCallback((item) => {
+    if (!item) return
+    setHistoryDeleteTarget({ type: 'one', id: item.id })
+  }, [])
+
+  const requestDeleteHistoryAll = useCallback(() => {
+    setHistoryDeleteTarget({ type: 'all' })
+  }, [])
+
+  const closeHistoryDeleteDialog = useCallback(() => {
+    setHistoryDeleteTarget(null)
+  }, [])
+
+  const confirmHistoryDelete = useCallback(() => {
+    if (!historyDeleteTarget) return
+    if (historyDeleteTarget.type === 'all') {
+      setScanHistory(clearScanHistory())
+    } else if (historyDeleteTarget.type === 'one' && historyDeleteTarget.id) {
+      setScanHistory(removeScanHistoryEntry(historyDeleteTarget.id))
+    }
+    setHistoryDeleteTarget(null)
+  }, [historyDeleteTarget])
 
   const visionBlock = useMemo(() => {
     if (!scanResult?.ok || !scanResult.vision) return null
@@ -475,54 +541,120 @@ export default function App() {
             id={`${tabId}-panel-scan`}
             role="tabpanel"
             aria-labelledby={`${tabId}-scan`}
-            className="grid"
+            className="grid scan-grid"
           >
-            <div className="card stack">
-              <h2>{t('yourPhoto')}</h2>
-              <div className="row wrap">
-                <label className="btn primary">
-                  {t('chooseImage')}
-                  <input type="file" accept="image/*" className="file-input-vhidden" onChange={onPickFile} />
-                </label>
-                <button type="button" className="btn" onClick={() => setCameraModalOpen(true)}>
-                  {t('cameraMobile')}
-                </button>
-                <button
-                  type="button"
-                  className={`btn primary${loading ? ' btn--loading' : ''}`}
-                  disabled={!file || loading}
-                  onClick={analyze}
-                  aria-busy={loading}
-                >
-                  {loading ? (
-                    <>
-                      <span className="spinner" aria-hidden="true" />
-                      {t('analyzing')}
-                    </>
-                  ) : (
-                    t('analyze')
+            <div className="stack scan-side">
+              <div className="card stack">
+                <h2>{t('yourPhoto')}</h2>
+                <div className="row wrap">
+                  <label className="btn primary">
+                    {t('chooseImage')}
+                    <input type="file" accept="image/*" className="file-input-vhidden" onChange={onPickFile} />
+                  </label>
+                  <button type="button" className="btn" onClick={() => setCameraModalOpen(true)}>
+                    {t('cameraMobile')}
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn primary${loading ? ' btn--loading' : ''}`}
+                    disabled={!file || loading}
+                    onClick={analyze}
+                    aria-busy={loading}
+                  >
+                    {loading ? (
+                      <>
+                        <span className="spinner" aria-hidden="true" />
+                        {t('analyzing')}
+                      </>
+                    ) : (
+                      t('analyze')
+                    )}
+                  </button>
+                </div>
+                {previewUrl && (
+                  <button
+                    type="button"
+                    className="preview preview--clickable"
+                    onClick={() => setPreviewLightboxOpen(true)}
+                    aria-label={t('previewOpenDetail')}
+                  >
+                    <img src={previewUrl} alt={t('previewAlt')} />
+                    <span className="preview__tap-hint fine">{t('previewTapHint')}</span>
+                  </button>
+                )}
+                <div aria-live="polite" aria-atomic="true">
+                  {scanError && <p className="warn">{scanError}</p>}
+                  {(scanResult?.hint || scanResult?.hint_vi) && !scanError && (
+                    <p className="fine">{scanResult.hint || scanResult.hint_vi}</p>
                   )}
-                </button>
+                </div>
               </div>
-              {previewUrl && (
-                <button
-                  type="button"
-                  className="preview preview--clickable"
-                  onClick={() => setPreviewLightboxOpen(true)}
-                  aria-label={t('previewOpenDetail')}
-                >
-                  <img src={previewUrl} alt={t('previewAlt')} />
-                  <span className="preview__tap-hint fine">{t('previewTapHint')}</span>
-                </button>
-              )}
-              <div aria-live="polite" aria-atomic="true">
-                {scanError && <p className="warn">{scanError}</p>}
-                {(scanResult?.hint || scanResult?.hint_vi) && !scanError && (
-                  <p className="fine">{scanResult.hint || scanResult.hint_vi}</p>
+              <div className="card stack scan-history">
+                <div className="scan-history__head">
+                  <h2>{t('scanHistoryTitle')}</h2>
+                  {scanHistory.length > 0 && (
+                    <button
+                      type="button"
+                      className="scan-history__clear"
+                      onClick={requestDeleteHistoryAll}
+                    >
+                      {t('scanHistoryClearAll')}
+                    </button>
+                  )}
+                </div>
+                <p className="fine">
+                  {t('scanHistoryRetention')} · {scanHistory.length} {t('scanHistoryItems')}
+                </p>
+                {scanHistory.length === 0 ? (
+                  <p className="empty-hint">{t('scanHistoryEmpty')}</p>
+                ) : (
+                  <ul className="scan-history__list">
+                    {scanHistory.map((item) => {
+                      const name =
+                        item.result?.analysis?.figure?.name_vi ||
+                        item.result?.merged?.knowledge?.display_name ||
+                        t('scanHistoryUnknown')
+                      const confidence = item.result?.analysis?.figure?.confidence
+                      return (
+                        <li key={item.id} className="scan-history__item">
+                          <button
+                            type="button"
+                            className="scan-history__pick"
+                            onClick={() => openHistoryItem(item)}
+                          >
+                            <span className="scan-history__thumb-wrap" aria-hidden="true">
+                              {item.imageDataUrl ? (
+                                <img className="scan-history__thumb" src={item.imageDataUrl} alt="" />
+                              ) : (
+                                <span className="scan-history__thumb scan-history__thumb--fallback">AI</span>
+                              )}
+                            </span>
+                            <span className="scan-history__meta">
+                              <span className="scan-history__name">{name}</span>
+                              <span className="scan-history__time">{formatHistoryTime(item.createdAt)}</span>
+                              {typeof confidence === 'number' && (
+                                <span className="scan-history__score">
+                                  {t('confidence')}: {(confidence * 100).toFixed(0)}%
+                                </span>
+                              )}
+                            </span>
+                          </button>
+                          <button
+                            type="button"
+                            className="scan-history__delete"
+                            aria-label={t('scanHistoryDeleteOne')}
+                            onClick={() => requestDeleteHistoryOne(item)}
+                          >
+                            ×
+                          </button>
+                        </li>
+                      )
+                    })}
+                  </ul>
                 )}
               </div>
             </div>
-            <div className="stack wide">
+            <div className="stack wide scan-main">
               {scanResult?.ok && scanResult.locale && scanResult.locale !== locale && (
                 <p className="fine warn">{t('resultLanguageMismatch')}</p>
               )}
@@ -759,6 +891,33 @@ export default function App() {
           }
           t={t}
         />
+      )}
+
+      {historyDeleteTarget && (
+        <div className="confirm-modal" role="dialog" aria-modal="true" aria-label={t('historyConfirmTitle')}>
+          <button
+            type="button"
+            className="confirm-modal__backdrop"
+            onClick={closeHistoryDeleteDialog}
+            aria-label={t('previewClose')}
+          />
+          <div className="confirm-modal__panel">
+            <h3 className="confirm-modal__title">{t('historyConfirmTitle')}</h3>
+            <p className="confirm-modal__desc">
+              {historyDeleteTarget.type === 'all'
+                ? t('historyConfirmClearAllMessage')
+                : t('historyConfirmDeleteOneMessage')}
+            </p>
+            <div className="confirm-modal__actions">
+              <button type="button" className="btn" onClick={closeHistoryDeleteDialog}>
+                {t('historyConfirmCancel')}
+              </button>
+              <button type="button" className="btn primary" onClick={confirmHistoryDelete}>
+                {historyDeleteTarget.type === 'all' ? t('scanHistoryClearAll') : t('historyConfirmDelete')}
+              </button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )
