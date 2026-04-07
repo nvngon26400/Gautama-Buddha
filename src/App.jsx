@@ -14,13 +14,20 @@ import {
   loadScanHistory,
   removeScanHistoryEntry,
 } from './scanHistory.js'
-import { CameraCaptureModal } from './CameraCaptureModal.jsx'
 import { WelcomeSplash } from './WelcomeSplash.jsx'
-import { FigureImageCarousel } from './FigureImageCarousel.jsx'
+import { buildLibraryShareText } from './shareTextBuilders.js'
 const LunarCalendarPanel = lazy(() =>
   import('./LunarCalendarPanel.jsx').then((m) => ({ default: m.LunarCalendarPanel })),
 )
-import { ScanImageLightbox, buildLibraryShareText } from './ScanImageLightbox.jsx'
+const CameraCaptureModal = lazy(() =>
+  import('./CameraCaptureModal.jsx').then((m) => ({ default: m.CameraCaptureModal })),
+)
+const FigureImageCarousel = lazy(() =>
+  import('./FigureImageCarousel.jsx').then((m) => ({ default: m.FigureImageCarousel })),
+)
+const ScanImageLightbox = lazy(() =>
+  import('./ScanImageLightbox.jsx').then((m) => ({ default: m.ScanImageLightbox })),
+)
 
 const api = (path) => `/api${path}`
 
@@ -219,6 +226,7 @@ export default function App() {
   }, [tab])
 
   useEffect(() => {
+    if (tab !== 'library') return
     if (!selectedId) {
       setDetail(null)
       return
@@ -722,21 +730,23 @@ export default function App() {
                   <div className="card stack">
                     <h2>{detail.name_vi}</h2>
                     {librarySlides.length > 0 && (
-                      <FigureImageCarousel
-                        slides={librarySlides}
-                        figureName={detail.name_vi}
-                        locale={locale}
-                        onOpenLightbox={(i) => {
-                          setLibraryLightboxSlideIndex(i)
-                          setLibraryLightboxOpen(true)
-                        }}
-                        tapHint={t('previewTapHint')}
-                        previewOpenLabel={t('previewOpenDetail')}
-                        prevLabel={t('carouselPrev')}
-                        nextLabel={t('carouselNext')}
-                        dotsAriaLabel={t('carouselDotsAria')}
-                        slideDotTemplate={t('carouselSlideDot')}
-                      />
+                      <Suspense fallback={null}>
+                        <FigureImageCarousel
+                          slides={librarySlides}
+                          figureName={detail.name_vi}
+                          locale={locale}
+                          onOpenLightbox={(i) => {
+                            setLibraryLightboxSlideIndex(i)
+                            setLibraryLightboxOpen(true)
+                          }}
+                          tapHint={t('previewTapHint')}
+                          previewOpenLabel={t('previewOpenDetail')}
+                          prevLabel={t('carouselPrev')}
+                          nextLabel={t('carouselNext')}
+                          dotsAriaLabel={t('carouselDotsAria')}
+                          slideDotTemplate={t('carouselSlideDot')}
+                        />
+                      </Suspense>
                     )}
                     <p>{detail.summary_vi}</p>
                     <h3>{t('mudraCommonDetail')}</h3>
@@ -812,7 +822,7 @@ export default function App() {
             <p className="site-footer__copyright">{t('footCopyright')}</p>
             <p className="site-footer__contact-lead fine">{t('footContact')}</p>
             <div className="site-footer__links" role="group" aria-label={t('footerContactAria')}>
-              <a className="site-footer__pill site-footer__pill--admin" href="/admin">
+              {/* <a className="site-footer__pill site-footer__pill--admin" href="/admin">
                 <span className="site-footer__pill-ico" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <path
@@ -825,7 +835,7 @@ export default function App() {
                   <span className="site-footer__pill-label">{t('footerAdminLink')}</span>
                   <span className="site-footer__pill-sub">/admin</span>
                 </span>
-              </a>
+              </a> */}
               <a className="site-footer__pill" href={`mailto:${AUTHOR_CONTACT.email}`}>
                 <span className="site-footer__pill-ico" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -877,37 +887,43 @@ export default function App() {
         </span>
       </button>
 
-      <CameraCaptureModal
-        open={cameraModalOpen}
-        onClose={() => setCameraModalOpen(false)}
-        onCapture={applyPickedFile}
-        t={t}
-      />
-
-      {previewUrl && (
-        <ScanImageLightbox
-          open={previewLightboxOpen}
-          onClose={() => setPreviewLightboxOpen(false)}
-          imageUrl={previewUrl}
-          file={file}
-          scanResult={scanResult}
+      <Suspense fallback={null}>
+        <CameraCaptureModal
+          open={cameraModalOpen}
+          onClose={() => setCameraModalOpen(false)}
+          onCapture={applyPickedFile}
           t={t}
         />
+      </Suspense>
+
+      {previewUrl && (
+        <Suspense fallback={null}>
+          <ScanImageLightbox
+            open={previewLightboxOpen}
+            onClose={() => setPreviewLightboxOpen(false)}
+            imageUrl={previewUrl}
+            file={file}
+            scanResult={scanResult}
+            t={t}
+          />
+        </Suspense>
       )}
 
       {librarySlides.length > 0 && tab === 'library' && detail && (
-        <ScanImageLightbox
-          open={libraryLightboxOpen}
-          onClose={() => setLibraryLightboxOpen(false)}
-          imageUrl={librarySlides[libraryLightboxSlideIndex]?.url || detail.image.url}
-          shareText={libraryShareText}
-          heading={detail.name_vi}
-          downloadFilename={`figure-${detail.id}-${libraryLightboxSlideIndex + 1}.jpg`}
-          imageAlt={
-            librarySlides[libraryLightboxSlideIndex]?.alt_vi || detail.image.alt_vi || detail.name_vi
-          }
-          t={t}
-        />
+        <Suspense fallback={null}>
+          <ScanImageLightbox
+            open={libraryLightboxOpen}
+            onClose={() => setLibraryLightboxOpen(false)}
+            imageUrl={librarySlides[libraryLightboxSlideIndex]?.url || detail.image.url}
+            shareText={libraryShareText}
+            heading={detail.name_vi}
+            downloadFilename={`figure-${detail.id}-${libraryLightboxSlideIndex + 1}.jpg`}
+            imageAlt={
+              librarySlides[libraryLightboxSlideIndex]?.alt_vi || detail.image.alt_vi || detail.name_vi
+            }
+            t={t}
+          />
+        </Suspense>
       )}
 
       {historyDeleteTarget && (

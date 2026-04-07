@@ -49,6 +49,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .app__bg {
+    animation: none !important;
+  }
+}
+
 @keyframes bg-shift {
   0% {
     filter: hue-rotate(0deg) saturate(1);
@@ -77,6 +83,12 @@
     color-mix(in srgb, var(--surface-2) 40%, transparent) 100%
   );
   backdrop-filter: blur(12px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    backdrop-filter: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
