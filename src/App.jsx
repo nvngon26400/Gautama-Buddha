@@ -48,7 +48,8 @@ export default function App() {
   const [loading, setLoading] = useState(false)
   const [scanResult, setScanResult] = useState(() => persisted.scanResult)
   const [scanError, setScanError] = useState(() => persisted.scanError)
-  const [scanHistory, setScanHistory] = useState(() => loadScanHistory())
+  const [scanHistory, setScanHistory] = useState([])
+  const [scanHistoryLoaded, setScanHistoryLoaded] = useState(false)
   const [historyDeleteTarget, setHistoryDeleteTarget] = useState(null)
   const [pendingAutoScrollToResult, setPendingAutoScrollToResult] = useState(false)
   const [previewLightboxOpen, setPreviewLightboxOpen] = useState(false)
@@ -181,6 +182,21 @@ export default function App() {
   useEffect(() => {
     if (tab !== 'scan') setPreviewLightboxOpen(false)
   }, [tab])
+
+  useEffect(() => {
+    if (scanHistoryLoaded) return
+    if (tab !== 'scan') return
+    const run = () => {
+      setScanHistory(loadScanHistory())
+      setScanHistoryLoaded(true)
+    }
+    if (typeof window !== 'undefined' && typeof window.requestIdleCallback === 'function') {
+      const id = window.requestIdleCallback(run, { timeout: 220 })
+      return () => window.cancelIdleCallback(id)
+    }
+    const t = setTimeout(run, 80)
+    return () => clearTimeout(t)
+  }, [tab, scanHistoryLoaded])
 
   useEffect(() => {
     if (!previewLightboxOpen && !libraryLightboxOpen) return

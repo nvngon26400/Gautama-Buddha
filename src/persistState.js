@@ -1,6 +1,7 @@
 /**
  * Lưu trạng thái ứng dụng vào localStorage — giữ tối thiểu 365 ngày (browser không tự xóa;
- * có thể đọc lại sau reload / đóng tab). Giới hạn kích thước ảnh để tránh vượt quota.
+ * có thể đọc lại sau reload / đóng tab).
+ * Tối ưu performance: không hydrate/sync payload phân tích nặng ở startup.
  */
 import { PERSIST_KEY as PERSIST_KEY_SHARED, STORAGE_LOCALE, STORAGE_THEME } from './storageKeys.js'
 
@@ -8,8 +9,6 @@ export const PERSIST_KEY = PERSIST_KEY_SHARED
 export const PERSIST_VERSION = 1
 /** Mục tiêu: dữ liệu vẫn hợp lệ sau ít nhất 365 ngày — không TTL xóa trước mốc đó. */
 export const MIN_RETENTION_DAYS = 365
-
-const MAX_IMAGE_CHARS = 2_400_000
 
 function safeParse(raw) {
   try {
@@ -43,9 +42,9 @@ function readLegacyThemeLocale() {
  *   locale: string,
  *   tab: string,
  *   selectedId: string | null,
- *   scanResult: object | null,
- *   scanError: string | null,
- *   imageDataUrl: string | null,
+ *   scanResult: null,
+ *   scanError: null,
+ *   imageDataUrl: null,
  *   calendarYmd: string | null,
  * }}
  */
@@ -73,9 +72,9 @@ export function loadPersistedState() {
           locale: j.locale === 'en' || j.locale === 'vi' ? j.locale : defaults.locale,
           tab,
           selectedId: typeof j.selectedId === 'string' ? j.selectedId : j.selectedId ? String(j.selectedId) : null,
-          scanResult: j.scanResult && typeof j.scanResult === 'object' ? j.scanResult : null,
-          scanError: typeof j.scanError === 'string' ? j.scanError : null,
-          imageDataUrl: typeof j.imageDataUrl === 'string' && j.imageDataUrl.startsWith('data:') ? j.imageDataUrl : null,
+          scanResult: null,
+          scanError: null,
+          imageDataUrl: null,
           calendarYmd: typeof j.calendarYmd === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(j.calendarYmd) ? j.calendarYmd : null,
         }
       }
@@ -125,9 +124,9 @@ export function saveFullSnapshot(p) {
     locale: p.locale,
     tab: p.tab,
     selectedId: p.selectedId ?? null,
-    scanResult: p.scanResult ?? null,
-    scanError: p.scanError ?? null,
-    imageDataUrl: typeof p.imageDataUrl === 'string' && p.imageDataUrl.startsWith('data:') ? p.imageDataUrl : null,
+    scanResult: null,
+    scanError: null,
+    imageDataUrl: null,
     calendarYmd: p.calendarAnchor instanceof Date ? ymdFromDate(p.calendarAnchor) : null,
   }
   return writePersistedPayload(payload)
@@ -178,18 +177,14 @@ export function writePersistedPayload(payload) {
 export async function previewUrlToDataUrl(previewUrl) {
   if (!previewUrl) return null
   if (previewUrl.startsWith('data:')) {
-    return previewUrl.length <= MAX_IMAGE_CHARS ? previewUrl : null
+    return previewUrl
   }
   if (!previewUrl.startsWith('blob:')) return null
   const r = await fetch(previewUrl)
   const blob = await r.blob()
   return new Promise((resolve, reject) => {
     const fr = new FileReader()
-    fr.onload = () => {
-      const s = typeof fr.result === 'string' ? fr.result : null
-      if (!s || s.length > MAX_IMAGE_CHARS) resolve(null)
-      else resolve(s)
-    }
+    fr.onload = () => resolve(typeof fr.result === 'string' ? fr.result : null)
     fr.onerror = () => reject(new Error('read'))
     fr.readAsDataURL(blob)
   })

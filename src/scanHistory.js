@@ -1,7 +1,7 @@
 const SCAN_HISTORY_KEY = 'gautama-scan-history-v1'
 const HISTORY_TTL_MS = 365 * 24 * 60 * 60 * 1000
-const MAX_ITEMS = 48
-const MAX_IMAGE_CHARS = 900_000
+const MAX_ITEMS = 20
+const MAX_IMAGE_CHARS = 180_000
 
 function safeParse(raw) {
   try {

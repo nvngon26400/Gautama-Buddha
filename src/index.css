@@ -36,8 +36,8 @@
   --radius-lg: 22px;
   --radius-pill: 999px;
 
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-ui: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-ui: system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
