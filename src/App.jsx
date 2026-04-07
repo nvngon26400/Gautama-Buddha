@@ -31,6 +31,7 @@ const AUTHOR_CONTACT = {
 
 export default function App() {
   const tabId = useId()
+  const scanResultAnchorId = useId()
   const persisted = useMemo(() => loadPersistedState(), [])
 
   const [locale, setLocale] = useState(() => persisted.locale)
@@ -45,6 +46,7 @@ export default function App() {
   const [scanError, setScanError] = useState(() => persisted.scanError)
   const [scanHistory, setScanHistory] = useState(() => loadScanHistory())
   const [historyDeleteTarget, setHistoryDeleteTarget] = useState(null)
+  const [pendingAutoScrollToResult, setPendingAutoScrollToResult] = useState(false)
   const [previewLightboxOpen, setPreviewLightboxOpen] = useState(false)
   const [cameraModalOpen, setCameraModalOpen] = useState(false)
   const [libraryLightboxOpen, setLibraryLightboxOpen] = useState(false)
@@ -176,6 +178,18 @@ export default function App() {
   }, [tab])
 
   useEffect(() => {
+    if (!pendingAutoScrollToResult || !scanResult) return
+    const anchor = document.getElementById(scanResultAnchorId)
+    if (!anchor) return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    anchor.scrollIntoView({
+      behavior: reduce ? 'auto' : 'smooth',
+      block: 'start',
+    })
+    setPendingAutoScrollToResult(false)
+  }, [pendingAutoScrollToResult, scanResult, scanResultAnchorId])
+
+  useEffect(() => {
     if (tab !== 'library') setLibraryLightboxOpen(false)
   }, [tab])
 
@@ -251,6 +265,7 @@ export default function App() {
 
   const analyze = useCallback(async () => {
     if (!file) return
+    setPendingAutoScrollToResult(true)
     setLoading(true)
     setScanError(null)
     setScanResult(null)
@@ -285,6 +300,7 @@ export default function App() {
       }
     } catch (e) {
       setScanError(e.message || messages[locale].errNetwork)
+      setPendingAutoScrollToResult(false)
     } finally {
       setLoading(false)
     }
@@ -655,6 +671,7 @@ export default function App() {
               </div>
             </div>
             <div className="stack wide scan-main">
+              <div id={scanResultAnchorId} />
               {scanResult?.ok && scanResult.locale && scanResult.locale !== locale && (
                 <p className="fine warn">{t('resultLanguageMismatch')}</p>
               )}
