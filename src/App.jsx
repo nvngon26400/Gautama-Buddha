@@ -286,14 +286,14 @@ export default function App() {
         } catch {
           imageDataUrl = null
         }
-        setScanHistory((prev) => {
-          const next = addScanHistoryEntry({
-            locale,
-            imageDataUrl,
-            result: data,
-          })
-          return Array.isArray(next) ? next : prev
+        const next = addScanHistoryEntry({
+          locale,
+          imageDataUrl,
+          result: data,
         })
+        if (Array.isArray(next)) {
+          setScanHistory(next)
+        }
       }
       if (data.ok === false) {
         setScanError(data.message || data.message_vi || messages[locale].errAnalyzeFallback)
