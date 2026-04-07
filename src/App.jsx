@@ -25,9 +25,6 @@ const CameraCaptureModal = lazy(() =>
 const FigureImageCarousel = lazy(() =>
   import('./FigureImageCarousel.jsx').then((m) => ({ default: m.FigureImageCarousel })),
 )
-const ScanImageLightbox = lazy(() =>
-  import('./ScanImageLightbox.jsx').then((m) => ({ default: m.ScanImageLightbox })),
-)
 
 const api = (path) => `/api${path}`
 
@@ -58,6 +55,7 @@ export default function App() {
   const [cameraModalOpen, setCameraModalOpen] = useState(false)
   const [libraryLightboxOpen, setLibraryLightboxOpen] = useState(false)
   const [libraryLightboxSlideIndex, setLibraryLightboxSlideIndex] = useState(0)
+  const [ScanImageLightboxComp, setScanImageLightboxComp] = useState(null)
 
   const [figures, setFigures] = useState([])
   const [selectedId, setSelectedId] = useState(() => persisted.selectedId)
@@ -183,6 +181,18 @@ export default function App() {
   useEffect(() => {
     if (tab !== 'scan') setPreviewLightboxOpen(false)
   }, [tab])
+
+  useEffect(() => {
+    if (!previewLightboxOpen && !libraryLightboxOpen) return
+    if (ScanImageLightboxComp) return
+    let cancelled = false
+    import('./ScanImageLightbox.jsx').then((m) => {
+      if (!cancelled) setScanImageLightboxComp(() => m.ScanImageLightbox)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [previewLightboxOpen, libraryLightboxOpen, ScanImageLightboxComp])
 
   useEffect(() => {
     if (!pendingAutoScrollToResult || !scanResult) return
@@ -896,9 +906,9 @@ export default function App() {
         />
       </Suspense>
 
-      {previewUrl && (
+      {previewUrl && ScanImageLightboxComp && (
         <Suspense fallback={null}>
-          <ScanImageLightbox
+          <ScanImageLightboxComp
             open={previewLightboxOpen}
             onClose={() => setPreviewLightboxOpen(false)}
             imageUrl={previewUrl}
@@ -909,9 +919,9 @@ export default function App() {
         </Suspense>
       )}
 
-      {librarySlides.length > 0 && tab === 'library' && detail && (
+      {librarySlides.length > 0 && tab === 'library' && detail && ScanImageLightboxComp && (
         <Suspense fallback={null}>
-          <ScanImageLightbox
+          <ScanImageLightboxComp
             open={libraryLightboxOpen}
             onClose={() => setLibraryLightboxOpen(false)}
             imageUrl={librarySlides[libraryLightboxSlideIndex]?.url || detail.image.url}

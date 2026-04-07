@@ -89,6 +89,15 @@
   .hero {
     backdrop-filter: none;
   }
+
+  .app__bg {
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-elevated) 100%);
+  }
+
+  .card {
+    box-shadow: var(--shadow-sm);
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

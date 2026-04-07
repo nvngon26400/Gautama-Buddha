@@ -2,13 +2,29 @@ import { useEffect, useState } from 'react'
 import amitabhaSplashUrl from './assets/amitabha-splash.svg?url'
 import './WelcomeSplash.css'
 
-const HOLD_MS = 2400
+const HOLD_MS = 850
 /** Chờ hết animation thoát (~0,65s) sau HOLD_MS */
-const TOTAL_MS = 3100
+const TOTAL_MS = 1350
 
 function prefersReducedMotion() {
   if (typeof window === 'undefined') return false
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
+function shouldSkipSplash() {
+  if (typeof window === 'undefined') return true
+  if (prefersReducedMotion()) return true
+  if (window.matchMedia('(max-width: 768px)').matches) return true
+  try {
+    const nav = navigator
+    const conn = nav.connection || nav.mozConnection || nav.webkitConnection
+    if (conn?.saveData) return true
+    if (typeof nav.hardwareConcurrency === 'number' && nav.hardwareConcurrency <= 4) return true
+    if (sessionStorage.getItem('welcome_splash_seen') === '1') return true
+  } catch {
+    /* ignore */
+  }
+  return false
 }
 
 /**
@@ -17,10 +33,15 @@ function prefersReducedMotion() {
  */
 export function WelcomeSplash({ t }) {
   const [phase, setPhase] = useState('in')
-  const [mounted, setMounted] = useState(() => !prefersReducedMotion())
+  const [mounted, setMounted] = useState(() => !shouldSkipSplash())
 
   useEffect(() => {
     if (!mounted) return
+    try {
+      sessionStorage.setItem('welcome_splash_seen', '1')
+    } catch {
+      /* ignore */
+    }
     const tExit = setTimeout(() => setPhase('out'), HOLD_MS)
     const tDone = setTimeout(() => setMounted(false), TOTAL_MS)
     return () => {
